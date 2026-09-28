@@ -20,14 +20,14 @@ def draw_circle_and_square(canvas):
     canvas.set_pen_color(canvas.RED)
     # BUG: This circle's numbers (aka arguments) are all wrong!
     # Change the arguments so the circle neatly fills the square
-    canvas.circle(100, 100, 100)
+    canvas.circle(250, 250, 150)
 
 
 
 def main():
     canvas = canvas2d.Canvas(500, 500)
     canvas.clear(canvas.WHITE)
-    canvas.set_pen_width(1)
+    canvas.set_pen_width(3)
     draw_circle_and_square(canvas)
     canvas.wait_for_close()
 
