@@ -24,7 +24,7 @@ def draw_circle_and_square():
     dudraw.set_pen_color(dudraw.RED)
     # BUG: this radius is too big, so the circle sticks out past the square.
     # What should the circle's radius be, in terms of half_side?
-    radius = half_side * 1.5
+    radius = half_side * .98
     dudraw.circle(center_x, center_y, radius)
 
 
