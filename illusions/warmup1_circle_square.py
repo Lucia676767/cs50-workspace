@@ -27,7 +27,7 @@ def draw_circle_and_square(canvas):
 def main():
     canvas = canvas2d.Canvas(500, 500)
     canvas.clear(canvas.WHITE)
-    canvas.set_pen_width(5)
+    canvas.set_pen_width(1)
     draw_circle_and_square(canvas)
     canvas.wait_for_close()
 
