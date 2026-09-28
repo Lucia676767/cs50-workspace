@@ -14,8 +14,8 @@ def draw_crosshairs():
       1. That line should span the FULL canvas, left edge to right edge.
       2. There should also be a vertical line spanning the full canvas.
     """
-    center_x = 0.5
-    center_y = 0.5
+    center_x = .5
+    center_y = .5
 
     dudraw.set_pen_color(dudraw.RED)
     # BUG: this only reaches from the center to the right edge.
