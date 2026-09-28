@@ -25,7 +25,7 @@ def draw_piano_pattern(canvas):
         canvas.set_pen_color(canvas.BLACK)
     for i in range(6):
         key_x = 50 + i * 60 # More variables! Don't change this one though
-        canvas.rectangle(key_x, 400, 50, 120) # Don't change this line either
+        canvas.rectangle(key_x, 200, 100, 25) # Don't change this line either
 
 
     # Draws the extra white key at the end. Leave this alone!
