@@ -26,7 +26,7 @@ def draw_crosshairs():
 
 
 def main():
-    dudraw.set_canvas_size(512, 512)
+    dudraw.set_canvas_size(512, 515)
     dudraw.clear(dudraw.WHITE)
     dudraw.set_pen_width(0.02)
     draw_crosshairs()
