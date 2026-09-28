@@ -26,6 +26,7 @@ def draw_circle_border(canvas):
         canvas.filled_circle(top_bottom_x, 0, 25)
         canvas.filled_circle(top_bottom_x, 500, 25)
 
+
     # TODO: write a loop that draws circles down the left and right
     # edges, spaced the same way as the top/bottom loop above.
 
