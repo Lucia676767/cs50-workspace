@@ -12,7 +12,7 @@ import canvas2d
 def draw_my_illusion(canvas):
     """Draw your chosen illusion."""
     # TODO: replace this with your illusion
-    canvas.set_pen_color(canvas.BLACK)
+    canvas.set_pen_color(canvas.GRAY)
     canvas.set_pen_width(5)
     canvas.filled_rectangle(250, 500, 500, 20)
     canvas.rectangle(250, 500, 500, 20)
