@@ -7,15 +7,17 @@ number of shapes, line thickness, or anything else) so your version
 is distinct from the original, without breaking the illusion.
 """
 import canvas2d
-
+import dudraw
+dudraw.set_x_scale(0, 100)
+dudraw.set_y_scale(0, 100)
 
 def draw_my_illusion(canvas):
     """Draw your chosen illusion."""
     # TODO: replace this with your illusion
     canvas.set_pen_color(canvas.GRAY)
     canvas.set_pen_width(5)
-    canvas.filled_rectangle(.5, .5, .1, .3)
-    canvas.rectangle(.5, .5, .1, .3)
+    canvas.filled_rectangle(50, 50, 50, 50)
+    canvas.rectangle(50, 50, 50, 50)
 
 def main():
     canvas = canvas2d.Canvas(1000, 1000)
