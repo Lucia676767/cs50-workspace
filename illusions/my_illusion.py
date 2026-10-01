@@ -13,6 +13,8 @@ def draw_my_illusion(canvas):
     """Draw your chosen illusion."""
     # TODO: replace this with your illusion
     pass
+canvas2d.set_pen_color(BLACK)
+canvas2d.BLACK
 
 def main():
     canvas = canvas2d.Canvas(1000, 1000)
