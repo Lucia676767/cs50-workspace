@@ -14,7 +14,6 @@ def draw_my_illusion(canvas):
     # TODO: replace this with your illusion
     pass
 
-
 def main():
     canvas = canvas2d.Canvas(1000, 1000)
     canvas.clear(canvas.WHITE)
