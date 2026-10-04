@@ -13,13 +13,13 @@ print(dir(canvas2d))
 def draw_my_illusion(canvas):
     """Draw your chosen illusion."""
     # TODO: replace this with your illusion
-
-
     #Apply to context
     gradientRectangle(canvas)
 
-
     #draw second grey rectangle
+    greyRectangle(canvas)
+
+def greyRectangle(canvas):
     canvas.set_pen_color(canvas.GRAY)
     canvas.set_pen_width(5)
     canvas.filled_rectangle(400, 300, 500, 200)
