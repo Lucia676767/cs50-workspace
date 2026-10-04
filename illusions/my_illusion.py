@@ -21,7 +21,7 @@ def draw_my_illusion(canvas):
 
     #Apply to context
     ctx.fillStyle = gradient;
-    canvas.filled_rectangle(400, 300, 100, 200)
+    canvas.filled_rectangle(500, 500, 1000, 1000)
 
     #draw second grey rectangle
     canvas.set_pen_color(canvas.GRAY)
