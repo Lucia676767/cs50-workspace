@@ -15,13 +15,14 @@ def draw_my_illusion(canvas):
     # TODO: replace this with your illusion
 
     #Create a linear gradient (x0, y0, x1, y1)
-    const gradient = ctx.createLinearGradient(0, 0, 200, 0);
+    ctx = canvas.getContext("2d");
+    ctx.fillStyle = gradient;
+    gradient = ctx.createLinearGradient(0, 0, 200, 0);
     gradient.addColorStop(0, "red");
     gradient.addColorStop(1, "yellow");
 
     #Apply to context
-    const ctx = canvas.getContext("2d");
-    ctx.fillStyle = gradient;
+
     canvas.filled_rectangle(500, 500, 1000, 1000)
 
     #draw second grey rectangle
