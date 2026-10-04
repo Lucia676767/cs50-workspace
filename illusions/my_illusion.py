@@ -14,22 +14,19 @@ def draw_my_illusion(canvas):
     """Draw your chosen illusion."""
     # TODO: replace this with your illusion
 
-    #Create a linear gradient (x0, y0, x1, y1)
-    ctx = canvas.getContext("2d");
-    ctx.fillStyle = gradient;
-    gradient = ctx.createLinearGradient(0, 0, 200, 0);
-    gradient.addColorStop(0, "red");
-    gradient.addColorStop(1, "yellow");
 
     #Apply to context
+    gradientRectangle(canvas)
 
-    canvas.filled_rectangle(500, 500, 1000, 1000)
 
     #draw second grey rectangle
     canvas.set_pen_color(canvas.GRAY)
     canvas.set_pen_width(5)
     canvas.filled_rectangle(400, 300, 500, 200)
 
+def gradientRectangle(canvas)
+    canvas.filled_rectangle(500, 500, 1000, 1000)
+    
 
 def main():
     canvas = canvas2d.Canvas(1000, 1000)
