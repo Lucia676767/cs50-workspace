@@ -13,8 +13,6 @@ print(dir(canvas2d))
 def draw_my_illusion(canvas):
     """Draw your chosen illusion."""
     # TODO: replace this with your illusion
-    canvas.set_pen_color(canvas.GRAY)
-    canvas.set_pen_width(5)
 
     #Create a linear gradient (x0, y0, x1, y1)
     const gradient = ctx.createLinearGradient(0, 0, 200, 0);
@@ -23,8 +21,11 @@ def draw_my_illusion(canvas):
 
     #Apply to context
     ctx.fillStyle = gradient;
+    canvas.filled_rectangle(400, 300, 100, 200)
 
     #draw second grey rectangle
+    canvas.set_pen_color(canvas.GRAY)
+    canvas.set_pen_width(5)
     canvas.filled_rectangle(400, 300, 500, 200)
 
 
