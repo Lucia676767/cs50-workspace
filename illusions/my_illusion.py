@@ -28,7 +28,7 @@ def gradientRectangle(canvas):
     for i in range(100):
         canvas.set_pen_color(canvas.BLACK)
         canvas.set_pen_width(10)
-        canvas.line(i*10, 0, 0, 1000)
+        canvas.line(i*10, 0, i*10, 1000)
 
 def main():
     canvas = canvas2d.Canvas(1000, 1000)
