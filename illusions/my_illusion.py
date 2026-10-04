@@ -26,7 +26,7 @@ def draw_my_illusion(canvas):
 
 def gradientRectangle(canvas):
     for i in range(100):
-        fade= 
+        fade= i*2.5
         canvas.set_pen_color_rgb(fade,fade,fade)
         canvas.set_pen_width(10)
         canvas.line(i*10, 0, i*10, 1000)
