@@ -25,9 +25,10 @@ def draw_my_illusion(canvas):
     canvas.filled_rectangle(400, 300, 500, 200)
 
 def gradientRectangle(canvas):
-    canvas.set_pen_color(canvas.BLACK)
-    canvas.set_pen_width(10)
-    canvas.line(0, 0, 0, 1000)
+    for i in range(100):
+        canvas.set_pen_color(canvas.BLACK)
+        canvas.set_pen_width(10)
+        canvas.line(i*10, 0, 0, 1000)
 
 def main():
     canvas = canvas2d.Canvas(1000, 1000)
