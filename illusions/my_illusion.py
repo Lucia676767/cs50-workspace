@@ -17,12 +17,12 @@ def draw_my_illusion(canvas):
     gradientRectangle(canvas)
 
     #draw second grey rectangle
-    greyRectangle(canvas)
+    drawRectangle(canvas,canvas.GRAY,5,400, 300, 500, 200)
 
-def greyRectangle(canvas):
-    canvas.set_pen_color(canvas.GRAY)
-    canvas.set_pen_width(5)
-    canvas.filled_rectangle(400, 300, 500, 200)
+def drawRectangle(canvas,color,penWidth,x,y,width,height):
+    canvas.set_pen_color(color)
+    canvas.set_pen_width(penWidth)
+    canvas.filled_rectangle(x,y,width,height)
 
 def gradientRectangle(canvas):
     for i in range(100):
