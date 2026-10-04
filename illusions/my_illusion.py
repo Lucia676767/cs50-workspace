@@ -16,8 +16,8 @@ def draw_my_illusion(canvas):
     # TODO: replace this with your illusion
     canvas.set_pen_color(canvas.GRAY)
     canvas.set_pen_width(5)
-    canvas.filled_rectangle(50, 50, 50, 50)
-    canvas.rectangle(50, 50, 50, 50)
+    canvas.filled_rectangle(400, 300, 500, 200)
+    #canvas.rectangle(50, 50, 50, 50)
 
 def main():
     canvas = canvas2d.Canvas(1000, 1000)
