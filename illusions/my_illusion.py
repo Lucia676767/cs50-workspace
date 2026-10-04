@@ -8,8 +8,8 @@ is distinct from the original, without breaking the illusion.
 """
 import canvas2d
 print(dir(canvas2d))
-canvas2d.set_x_scale(0, 100)
-canvas2d.set_y_scale(0, 100)
+#canvas2d.set_x_scale(0, 100)
+#canvas2d.set_y_scale(0, 100)
 
 def draw_my_illusion(canvas):
     """Draw your chosen illusion."""
