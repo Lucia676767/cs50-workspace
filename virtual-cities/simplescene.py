@@ -20,7 +20,7 @@ def main():
     simple_snowman(scene, 5, -6)
 
     # TODO (Task 1): call draw_tree to plant a tree. Remember to pass scene first!
-    draw_tree(scene, cx, cz, height)
+def drawTree(scene, cx, cz, height)
     add_cylinder(cx, cy, cz, radius, height, r, g, b)
 
     # Draw a cyan cow and a smokestack with "meshes"
