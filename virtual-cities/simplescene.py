@@ -20,8 +20,11 @@ def main():
     simple_snowman(scene, 5, -6)
 
     # TODO (Task 1): call draw_tree to plant a tree. Remember to pass scene first!
-def drawTree(scene, cx, cz, height)
-    add_cylinder(cx, cy, cz, radius, height, r, g, b)
+def drawTree(scene, cx, cz, height):
+    scene = Scene3D()
+# Draw a yellow cylinder centered at (0, 1, -2) with radius 0.5 and height 2
+    scene.add_cylinder(0, 1, -2, 0.5, 2, 255, 255, 0)
+   # add_cylinder(4, 5, 5, 4, 7, 165, 42, 42)
 
     # Draw a cyan cow and a smokestack with "meshes"
     add_meshes(scene)
