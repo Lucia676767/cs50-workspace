@@ -29,11 +29,10 @@ def main():
 
 # Task 1: finish this function (delete "pass" once you add your code)
 def drawTree(scene, cx, cz, height):
-    # Brown trunk
-    scene.add_cylinder(cx, 1, cz, 1, 1, 175, 75, 0)
+    scene.add_cylinder(cx, 1, cz, 0.5, 0.5, 139, 69, 19)
+    scene.add_cone(cx, height, cz, 2, height, 34, 139, 34)
 
-    # Green leaves
-    scene.add_cone(cx, height, cz, 3, height, 34, 139, 34)
+
 
 #    Task 2 and beyond: define your own functions!
 
@@ -67,11 +66,10 @@ def add_meshes(scene):
     scene.add_textured_mesh("meshes/smokestack/medres.obj", "meshes/smokestack/medres.mtl",
                             0, 18, -20, 0, 180, 0, 10, 10, 10, 0)
 def draw_fire_hydrant(scene, cx, cz):
-
-    scene.add_cylinder(cx, 0.1, cz, 0.2, 0.2, 255, 0, 0)
-    scene.add_cylinder(cx, 0.5, cz, 0.12, 0.12, 255, 0, 0)
-    scene.add_sphere(cx, 0.85, cz, 0.12, 255, 0, 0)
-    scene.add_box(cx - 0.2, 0.55, cz, 0.15, 0.1, 0.1, 255, 0, 0)
-    scene.add_box(cx + 0.2, 0.55, cz, 0.15, 0.1, 0.1, 255, 0, 0)
+    scene.add_cylinder(cx, 0.1, cz, 0.25, 0.25, 255, 0, 0)
+    scene.add_cylinder(cx, 0.5, cz, 0.15, 0.15, 255, 0, 0)
+    scene.add_sphere(cx, 0.8, cz, 0.15, 255, 0, 0)
+    scene.add_box(cx - 0.25, 0.5, cz, 0.2, 0.12, 0.12, 255, 0, 0)
+    scene.add_box(cx + 0.25, 0.5, cz, 0.2, 0.12, 0.12, 255, 0, 0)
     
 main()
