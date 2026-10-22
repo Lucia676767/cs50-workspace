@@ -29,11 +29,11 @@ def main():
 
 # Task 1: finish this function (delete "pass" once you add your code)
 def drawTree(scene, cx, cz, height):
-    # Tree trunk
-    scene.add_cylinder(cx, 1, cz, 3, 3, 139, 69, 19)
+    # Trunk
+    scene.add_cylinder(cx, 1, cz, 3, 3, 175, 75, 0)
 
-    # Tree leaves
-    scene.add_cone(cx, height, cz, height / 3, height / 2,
+    # Leaves, positioned on top of the trunk
+    scene.add_cone(cx, height / 2 + 3, cz, height / 3, height / 2,
                    34, 139, 34)
     # TODO: draw a green ellipsoid for the leaves
     # TODO: draw a brown cylinder for the trunk
