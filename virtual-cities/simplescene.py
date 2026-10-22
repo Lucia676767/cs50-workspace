@@ -28,9 +28,13 @@ def main():
     scene.save_scene("simplescene.html", "Simple Sample Scene")
 
 # Task 1: finish this function (delete "pass" once you add your code)
-def drawTree(scene, cx, cz, height) :
-    scene.add_cylinder(cx, 1, 4, 3, 3, 175, 75, 0)
+def drawTree(scene, cx, cz, height):
+    # Tree trunk
+    scene.add_cylinder(cx, 1, cz, 3, 3, 139, 69, 19)
 
+    # Tree leaves
+    scene.add_cone(cx, height, cz, height / 3, height / 2,
+                   34, 139, 34)
     # TODO: draw a green ellipsoid for the leaves
     # TODO: draw a brown cylinder for the trunk
 
