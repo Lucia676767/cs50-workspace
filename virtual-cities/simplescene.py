@@ -22,6 +22,7 @@ def main():
     # TODO (Task 1): call draw_tree to plant a tree. Remember to pass scene first!
     drawTree(scene, 0, 0, 10)
     drawTree(scene, 2, 2, 3)
+    draw_fire_hydrant(scene, 4, 4)
     # Draw a cyan cow and a smokestack with "meshes"
     add_meshes(scene)
 
