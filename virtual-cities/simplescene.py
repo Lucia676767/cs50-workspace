@@ -72,5 +72,5 @@ def draw_fire_hydrant(scene, cx, cz):
     scene.add_sphere(cx, .8, cz, 0.15, 255, 0, 0)
     scene.add_box(cx, .6, cz, 0.5, 0.12, 0.12, 255, 0, 0)
     scene.add_box(cx, .6, cz, 0.12, 0.12, 0.5, 255, 0, 0)
-
+    
 main()
