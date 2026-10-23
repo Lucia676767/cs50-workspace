@@ -29,7 +29,7 @@ def main():
 
 # Task 1: finish this function (delete "pass" once you add your code)
 def drawTree(scene, cx, cz, height):
-    scene.add_cylinder(cx, height, cz, 0.5, 0.5, 139, 69, 19)
+    scene.add_cylinder(cx, 1, cz, 0.5, height, 139, 69, 19)
     #scene.add_cone(cx, height, cz, 2, height, 34, 139, 34)
 
 
