@@ -69,7 +69,7 @@ def add_meshes(scene):
 def draw_fire_hydrant(scene, cx, cz):
     scene.add_cylinder(cx, 1, cz, 0.25, 0.2, 255, 0, 0)
     scene.add_cylinder(cx, 1.2, cz, 0.15, 0.6, 255, 0, 0)
-    scene.add_sphere(cx, 1.4, cz, 0.15, 255, 0, 0)
+    scene.add_sphere(cx, 1.5, cz, 0.15, 255, 0, 0)
     scene.add_box(cx - 0.25, 0.5, cz, 0.2, 0.12, 0.12, 255, 0, 0)
     scene.add_box(cx + 0.25, 0.5, cz, 0.2, 0.12, 0.12, 255, 0, 0)
 
