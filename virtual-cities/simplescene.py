@@ -67,8 +67,8 @@ def add_meshes(scene):
     scene.add_textured_mesh("meshes/smokestack/medres.obj", "meshes/smokestack/medres.mtl",
                             0, 18, -20, 0, 180, 0, 10, 10, 10, 0)
 def draw_fire_hydrant(scene, cx, cz):
-    scene.add_cylinder(cx, 0.1, cz, 0.25, 0.25, 255, 0, 0)
-    scene.add_cylinder(cx, 0.5, cz, 0.15, 0.15, 255, 0, 0)
+    scene.add_cylinder(cx, 1, cz, 0.25, 0.25, 255, 0, 0)
+    scene.add_cylinder(cx, 1.25, cz, 0.15, 0.15, 255, 0, 0)
     scene.add_sphere(cx, 0.8, cz, 0.15, 255, 0, 0)
     scene.add_box(cx - 0.25, 0.5, cz, 0.2, 0.12, 0.12, 255, 0, 0)
     scene.add_box(cx + 0.25, 0.5, cz, 0.2, 0.12, 0.12, 255, 0, 0)
