@@ -33,13 +33,13 @@ def main():
 def draw_city_block(scene, cx, cz):
     for i in range(3):
         draw_city_block(scene, 3 + i, i * 20)
-        drawTree(scene, cx, cz, 6)
-        drawTree(scene, cx + 2, cz, 6)
-        draw_stop_light(scene, 4, 6)
-        draw_fire_hydrant(scene, 3.5, 7)
-        draw_sedan(scene, 8, 4, 255, 255, 0, ry=90)
-        draw_sedan(scene, 8, 16, 255, 0, 0, ry=0)
-        draw_building(scene, 0, 4)
+        drawTree(scene, cx, cz, cz + 6)
+        drawTree(scene, cx + 2, cz, cz + 6)
+        draw_stop_light(scene, cx + 4, cz + 6)
+        draw_fire_hydrant(scene, cx + 3.5, cz + 7)
+        draw_sedan(scene, cx + 8, cz + 4, 255, 255, 0, ry=90)
+        draw_sedan(scene, cx + 8, cz +1, 6, 255, 0, 0, ry=0)
+        draw_building(scene, cx, cz + 4)
 
 
 # Task 1: finish this function (delete "pass" once you add your code)
