@@ -26,7 +26,6 @@ def main():
     draw_fire_hydrant(scene, 3.5, 7)
     draw_sedan(scene, 8, 4, 255, 255, 0, ry=90)
     draw_sedan(scene, 8, 16, 255, 0, 0, ry=0)
-    draw_city_block(scene, 0, 0)
     draw_city_block(scene, 30, 0)
     add_meshes(scene)
     scene.save_scene("simplescene.html", "Simple Sample Scene")
