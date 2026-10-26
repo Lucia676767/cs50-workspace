@@ -34,9 +34,7 @@ def main():
 def drawTree(scene, cx, cz, height):
     scene.add_cylinder(cx, height/2, cz, 0.5, height, 139, 69, 19)
     scene.add_cone(cx, height + height/2, cz, 2, height, 34, 139, 34)
-
-
-
+    
 #    Task 2 and beyond: define your own functions!
 
 # All functions need "scene" as the first parameter
