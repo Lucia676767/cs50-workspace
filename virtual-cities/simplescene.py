@@ -58,7 +58,7 @@ def simple_snowman(scene, cx, cz):
     # Smaller white ball on top (radius 0.7), resting on the bottom ball
     scene.add_sphere(cx, 2.5, cz, 0.7, 255, 255, 255)
     # Black box for a hat, sitting on top of the head
-    scene.add_box(cx, 3.4, cz, 0.7, 0.4, 0.7, 0, 0, 0)
+    scene.add_box(cx - 8, 3.4, cz + 4, 0.7, 0.4, 0.7, 0, 0, 0)
 
 
 def setup_lights(scene):
