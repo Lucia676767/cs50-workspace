@@ -19,6 +19,9 @@ def main():
     simple_snowman(scene, 0, -12)
     simple_snowman(scene, 5, -6)
 
+    for i in range(3):
+        draw_city_block(scene, 3 + i, i * 20)
+
     # TODO (Task 1): call draw_tree to plant a tree. Remember to pass scene first!
     drawTree(scene, 0, 0, 6)
     drawTree(scene, 2, 2, 6)
@@ -39,8 +42,6 @@ def draw_city_block(scene, cx, cz):
         draw_sedan(scene, cx + 8, cz +16, 255, 0, 0, ry=0)
         draw_building(scene, cx, cz + 4)
 
-for i in range(3):
-        draw_city_block(scene, 3 + i, i * 20)
 
 # Task 1: finish this function (delete "pass" once you add your code)
 def drawTree(scene, cx, cz, height):
