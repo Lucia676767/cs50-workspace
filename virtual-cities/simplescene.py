@@ -83,7 +83,7 @@ def draw_stop_light(scene, cx, cz):
 
 def draw_sedan(scene, cx, cz, r, g, b, ry=0):
     # Create a group positioned at the sedan, with rotation applied
-    group = scene.add_group(cx, 0, cz, rx, 0, rz)
+    group = scene.add_group(cx, 0, cz, 4, 0, 4)
     group.add_box(cx, 1, cz, 1.7, 0.7, 4.5, r, g, b)
     group.add_box(cx, 1.75, cz+.4, 1.4, 0.8, 3.5, r, g, b)
     group.add_cylinder(cx, 0.65, cz-1.5, 0.5, 1.8,  127, 127, 127,1, 0, 0, 0, 90)
