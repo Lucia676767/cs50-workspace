@@ -31,6 +31,7 @@ def main():
     scene.save_scene("simplescene.html", "Simple Sample Scene")
 
 def draw_city_block(scene, cx, cz):
+    for i in range(3)
     drawTree(scene, 0, 0, 6)
     drawTree(scene, 2, 2, 6)
     draw_stop_light(scene, 4, 6)
