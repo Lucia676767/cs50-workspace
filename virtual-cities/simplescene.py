@@ -31,8 +31,8 @@ def main():
     scene.save_scene("simplescene.html", "Simple Sample Scene")
 
 def draw_city_block(scene, cx, cz):
-        drawTree(scene, cx, cz, 6)
-        drawTree(scene, cx + 2, cz, 6)
+        scene.drawTree(scene, cx, cz, 6)
+        scene.drawTree(scene, cx + 2, cz, 6)
         draw_stop_light(scene, cx + 4, cz + 6)
         draw_fire_hydrant(scene, cx + 3.5, cz + 7)
         draw_sedan(scene, cx + 8, cz + 4, 255, 255, 0, ry=90)
@@ -40,7 +40,7 @@ def draw_city_block(scene, cx, cz):
         draw_building(scene, cx, cz + 4)
 
 for i in range(3):
-        draw_city_block(Scene3D, 3 + i, i * 20)
+        draw_city_block(scene, 3 + i, i * 20)
 
 # Task 1: finish this function (delete "pass" once you add your code)
 def drawTree(scene, cx, cz, height):
