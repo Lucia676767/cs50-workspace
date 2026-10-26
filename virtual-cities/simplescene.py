@@ -85,7 +85,7 @@ def draw_stop_light(scene, cx, cz):
 
 def draw_sedan(scene, cx, cz, r, g, b, ry=0):
     scene.add_box(cx, 1, cz, 1.7, 0.7, 4.5, r, g, b)
-    scene.add_box(cx, cy, cz, 1.4, 0.8, 3.5, r, g, b)
+    scene.add_box(cx, 3.1, cz, 1.4, 0.8, 3.5, r, g, b)
     #scene.add_sphere(cx, cy, cz, radius, r, g, b)
     #scene.add_sphere(cx, cy, cz, radius, r, g, b)
 
