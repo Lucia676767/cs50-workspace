@@ -104,7 +104,7 @@ def draw_sedan(scene, cx, cz, r, g, b, ry):
 
 def draw_building(scene, cx, cz):
     #scene.add_box(-7, 8, 4, 10, 30, 10, 128, 128, 128)
-    scene.add_box(0, 15, 0, 10, 30, 10, 128, 128, 128)
+    scene.add_box(cx - 8, 15, cz, 10, 30, 10, 128, 128, 128)
 
 
 main()
