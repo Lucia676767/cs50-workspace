@@ -24,7 +24,7 @@ def main():
     drawTree(scene, 2, 2, 6)
     draw_stop_light(scene, 4, 6)
     draw_fire_hydrant(scene, 3.5, 7)
-    draw_sedan(scene, 10, 8, 255, 255, 0, ry=0)
+    draw_sedan(scene, 4, 8, 255, 255, 0, ry=0)
     # Draw a cyan cow and a smokestack with "meshes"
     add_meshes(scene)
 
