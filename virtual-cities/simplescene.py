@@ -24,7 +24,8 @@ def main():
     drawTree(scene, 2, 2, 6)
     draw_stop_light(scene, 4, 6)
     draw_fire_hydrant(scene, 3.5, 7)
-    draw_sedan(scene, 4, 8, 255, 255, 0, ry=90)
+    draw_sedan(scene, 8, 4, 255, 255, 0, ry=90)
+    draw_sedan(scene, 8, 16, 255, 0, 0, ry=0)
     # Draw a cyan cow and a smokestack with "meshes"
     add_meshes(scene)
 
@@ -84,10 +85,10 @@ def draw_stop_light(scene, cx, cz):
 def draw_sedan(scene, cx, cz, r, g, b, ry):
     # Create a group positioned at the sedan, with rotation applied
     group = scene.add_group(cx, 0, cz, 0, ry, 0)
-    group.add_box(cx, 1, cz, 1.7, 0.7, 4.5, r, g, b)
-    group.add_box(cx, 1.75, cz+.4, 1.4, 0.8, 3.5, r, g, b)
-    group.add_cylinder(cx, 0.65, cz-1.5, 0.5, 1.8,  127, 127, 127,1, 0, 0, 0, 90)
-    group.add_cylinder(cx, 0.65, cz+1.5, 0.5, 1.8,  127, 127, 127,1, 0, 0, 0, 90)
+    group.add_box(0, 1, 0, 1.7, 0.7, 4.5, r, g, b)
+    group.add_box(0, 1.75, .4, 1.4, 0.8, 3.5, r, g, b)
+    group.add_cylinder(0, 0.65, -1.5, 0.5, 1.8,  127, 127, 127,1, 0, 0, 0, 90)
+    group.add_cylinder(0, 0.65, 1.5, 0.5, 1.8,  127, 127, 127,1, 0, 0, 0, 90)
 
 
 main()
