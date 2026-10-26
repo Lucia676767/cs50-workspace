@@ -91,6 +91,9 @@ def draw_sedan(scene, cx, cz, r, g, b, ry):
     group.add_cylinder(0, 0.65, -1.5, 0.5, 1.8,  127, 127, 127,1, 0, 0, 0, 90)
     group.add_cylinder(0, 0.65, 1.5, 0.5, 1.8,  127, 127, 127,1, 0, 0, 0, 90)
 
-def draw_city_block(scene, 30, 0):
-    scene.add_box(cx, cy, cz, xlen, ylen, zlen, 0, 2, 2)
+def draw_city_block(scene, cx, cz):
+    scene.add_box(cx, 0, cz, 300, 100, 300, 0, 2, 2)
+
+
+
 main()
