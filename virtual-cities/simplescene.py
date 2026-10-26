@@ -30,11 +30,11 @@ def main():
     add_meshes(scene)
     scene.save_scene("simplescene.html", "Simple Sample Scene")
 
-def draw_city_block(scene, 3 + , i * 20):
+def draw_city_block(scene, cx, cz):
     for i in range(3):
         draw_city_block(scene, 3 + i, i * 20)
-        drawTree(scene, 0, 0, 6)
-        drawTree(scene, 2, 2, 6)
+        drawTree(scene, cx, cz, 6)
+        drawTree(scene, cx + 2, cz, 6)
         draw_stop_light(scene, 4, 6)
         draw_fire_hydrant(scene, 3.5, 7)
         draw_sedan(scene, 8, 4, 255, 255, 0, ry=90)
