@@ -26,7 +26,7 @@ def main():
     draw_fire_hydrant(scene, 3.5, 7)
     draw_sedan(scene, 8, 4, 255, 255, 0, ry=90)
     draw_sedan(scene, 8, 16, 255, 0, 0, ry=0)
-    draw_city_block(scene, 30, 0)
+    draw_building(scene, 0, 4)
     add_meshes(scene)
     scene.save_scene("simplescene.html", "Simple Sample Scene")
 
@@ -90,7 +90,7 @@ def draw_sedan(scene, cx, cz, r, g, b, ry):
     group.add_cylinder(0, 0.65, -1.5, 0.5, 1.8,  127, 127, 127,1, 0, 0, 0, 90)
     group.add_cylinder(0, 0.65, 1.5, 0.5, 1.8,  127, 127, 127,1, 0, 0, 0, 90)
 
-def draw_city_block(scene, cx, cz):
+def draw_building(scene, cx, cz):
     scene.add_box(cx, 0, cz, 300, 100, 300, 0, 2, 2)
 
 
