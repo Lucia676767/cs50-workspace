@@ -27,13 +27,13 @@ def main():
     draw_sedan(scene, 8, 4, 255, 255, 0, ry=90)
     draw_sedan(scene, 8, 16, 255, 0, 0, ry=0)
     draw_building(scene, 0, 4)
-    add_meshes(scene)
+    #add_meshes(scene)
     scene.save_scene("simplescene.html", "Simple Sample Scene")
 
 def draw_city_block(scene, cx, cz):
     drawTree(scene, 0, 0, 6)
     drawTree(scene, 2, 2, 6)
-    draw_stop_light(scene, 4, 6)
+    #draw_stop_light(scene, 4, 6)
     draw_fire_hydrant(scene, 3.5, 7)
     draw_sedan(scene, 8, 4, 255, 255, 0, ry=90)
     draw_sedan(scene, 8, 16, 255, 0, 0, ry=0)
@@ -51,7 +51,7 @@ def drawTree(scene, cx, cz, height):
 
 # All functions need "scene" as the first parameter
 # cx and cz say where the snowman's center goes
-def simple_snowman(scene, cx, cz):
+#def simple_snowman(scene, cx, cz):
     # Big white bottom ball (radius 1, so its center is 1 above the ground)
     scene.add_sphere(cx, 1, cz, 1, 255, 255, 255)
     # Smaller white ball on top (radius 0.7), resting on the bottom ball
@@ -60,13 +60,13 @@ def simple_snowman(scene, cx, cz):
     scene.add_box(cx, 3.4, cz, 0.7, 0.4, 0.7, 0, 0, 0)
 
 
-def setup_lights(scene):
+#def setup_lights(scene):
     scene.add_point_light(-100, 200, 0, 200, 200, 200, 1.0)
     scene.add_point_light(100, 200, 0, 200, 200, 200, 1.0)
     scene.add_point_light(0, 0, -100, 200, 200, 200, 1.0)
     scene.add_point_light(0, 0, 100, 200, 200, 200, 1.0)
 
-def setup_cameras(scene):
+#def setup_cameras(scene):
     scene.add_camera(0, 2, 0, 0)
     scene.add_camera(0, 2, -40, 180)
 
@@ -74,7 +74,7 @@ def add_ground(scene):
     # Add a large gray box for the ground
     scene.add_box(0, -25, 0, 1000, 50, 1000, 100, 100, 100)
 
-def add_meshes(scene):
+#def add_meshes(scene):
     scene.add_mesh("meshes/cow.obj", 1, 1, -7, 0, 0, 0, 1, 1, 1, 0, 255, 255)
     scene.add_textured_mesh("meshes/smokestack/medres.obj", "meshes/smokestack/medres.mtl",
                             0, 18, -20, 0, 180, 0, 10, 10, 10, 0)
