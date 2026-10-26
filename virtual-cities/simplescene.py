@@ -30,6 +30,8 @@ def main():
     add_meshes(scene)
     scene.save_scene("simplescene.html", "Simple Sample Scene")
 
+def draw_city_block(scene, cx, cz)
+    
 
 # Task 1: finish this function (delete "pass" once you add your code)
 def drawTree(scene, cx, cz, height):
