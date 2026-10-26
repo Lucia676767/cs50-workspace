@@ -24,7 +24,7 @@ def main():
     drawTree(scene, 2, 2, 6)
     draw_stop_light(scene, 4, 6)
     draw_fire_hydrant(scene, 3.5, 7)
-    draw_sedan(scene, cx, cz, 255, 255, 0, ry=0)
+    draw_sedan(scene, 10, 8, 255, 255, 0, ry=0)
     # Draw a cyan cow and a smokestack with "meshes"
     add_meshes(scene)
 
@@ -84,9 +84,9 @@ def draw_stop_light(scene, cx, cz):
     scene.add_sphere(cx+6, 7, cz+0.23, 0.23, 0, 255, 0)
 
 def draw_sedan(scene, cx, cz, r, g, b, ry=0):
+    scene.add_box(cx, .2, cz, 1.7, 0.7, 4.5, r, g, b)
     scene.add_box(cx, cy, cz, xlen, ylen, zlen, r, g, b)
-    scene.add_box(cx, cy, cz, xlen, ylen, zlen, r, g, b)
-    scene.add_sphere(cx, cy, cz, radius, r, g, b)
-    scene.add_sphere(cx, cy, cz, radius, r, g, b)
+    #scene.add_sphere(cx, cy, cz, radius, r, g, b)
+    #scene.add_sphere(cx, cy, cz, radius, r, g, b)
 
 main()
