@@ -91,7 +91,7 @@ def draw_sedan(scene, cx, cz, r, g, b, ry):
     group.add_cylinder(0, 0.65, 1.5, 0.5, 1.8,  127, 127, 127,1, 0, 0, 0, 90)
 
 def draw_building(scene, cx, cz):
-    scene.add_box(0, 2, -6, 1, 4, 1, 0, 2, 0)
+    scene.add_box(-7, 16, 4, 10, 30, 10, 128, 128, 128)
 
 
 
