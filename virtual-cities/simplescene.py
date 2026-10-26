@@ -40,7 +40,7 @@ def draw_city_block(scene, cx, cz):
     draw_building(scene, 0, 4)
 
     for i in range(3):
-        draw_city_block(scene, 3 + i * 3, 0)
+        draw_city_block(scene, 3 + i * 20)
 
 # Task 1: finish this function (delete "pass" once you add your code)
 def drawTree(scene, cx, cz, height):
