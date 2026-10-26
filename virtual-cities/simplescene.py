@@ -22,6 +22,7 @@ def main():
     # TODO (Task 1): call draw_tree to plant a tree. Remember to pass scene first!
     drawTree(scene, 0, 0, 6)
     drawTree(scene, 2, 2, 6)
+    draw_stop_light(scene, 4, 6)
     draw_fire_hydrant(scene, 4, 4)
     # Draw a cyan cow and a smokestack with "meshes"
     add_meshes(scene)
@@ -72,5 +73,7 @@ def draw_fire_hydrant(scene, cx, cz):
     scene.add_sphere(cx, .8, cz, 0.15, 255, 0, 0)
     scene.add_box(cx, .6, cz, 0.5, 0.12, 0.12, 255, 0, 0)
     scene.add_box(cx, .6, cz, 0.12, 0.12, 0.5, 255, 0, 0)
-    
+
+def draw_stop_light(scene, cx, cz)
+
 main()
