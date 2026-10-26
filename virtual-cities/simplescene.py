@@ -26,19 +26,11 @@ def main():
     draw_fire_hydrant(scene, 3.5, 7)
     draw_sedan(scene, 8, 4, 255, 255, 0, ry=90)
     draw_sedan(scene, 8, 16, 255, 0, 0, ry=0)
-    # Draw a cyan cow and a smokestack with "meshes"
+    draw_city_block(scene, 0, 0)
+    draw_city_block(scene, 30, 0)
     add_meshes(scene)
-
     scene.save_scene("simplescene.html", "Simple Sample Scene")
 
-def draw_city_block(scene, cx, cz):
-    #scene.add_box(4, 8, cz, xlen, ylen, zlen, r, g, b)
-    drawTree(scene, 0, 0, 6)
-    drawTree(scene, 2, 2, 6)
-    draw_stop_light(scene, 4, 6)
-    draw_fire_hydrant(scene, 3.5, 7)
-    draw_sedan(scene, 8, 4, 255, 255, 0, ry=90)
-    draw_sedan(scene, 8, 16, 255, 0, 0, ry=0)
 
 # Task 1: finish this function (delete "pass" once you add your code)
 def drawTree(scene, cx, cz, height):
@@ -99,5 +91,6 @@ def draw_sedan(scene, cx, cz, r, g, b, ry):
     group.add_cylinder(0, 0.65, -1.5, 0.5, 1.8,  127, 127, 127,1, 0, 0, 0, 90)
     group.add_cylinder(0, 0.65, 1.5, 0.5, 1.8,  127, 127, 127,1, 0, 0, 0, 90)
 
-
+def draw_city_block(scene, 30, 0):
+    scene.add_box(cx, cy, cz, xlen, ylen, zlen, 0, 2, 2)
 main()
