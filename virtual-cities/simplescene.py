@@ -39,7 +39,7 @@ def draw_city_block(scene, cx, cz):
     draw_sedan(scene, 8, 16, 255, 0, 0, ry=0)
     draw_building(scene, 0, 4)
 
-    for i in range(3):
+    for i in range(3): 
         draw_city_block(scene, 3 + i * 20)
 
 # Task 1: finish this function (delete "pass" once you add your code)
