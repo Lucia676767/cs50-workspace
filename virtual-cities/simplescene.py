@@ -21,7 +21,7 @@ def main():
 
     for i in range(3):
         draw_city_block(scene, 3 + i, i * 20)
-        
+
 
     # TODO (Task 1): call draw_tree to plant a tree. Remember to pass scene first!
     #drawTree(scene, 0, 0, 6)
@@ -36,7 +36,7 @@ def main():
 
 def draw_city_block(scene, cx, cz):
         drawTree(scene, cx, cz, 6)
-        drawTree(scene, cx + 2, cz, 6)
+        drawTree(scene, cx + 2, cz, 4)
         draw_stop_light(scene, cx + 4, cz + 6)
         draw_fire_hydrant(scene, cx + 3.5, cz + 7)
         draw_sedan(scene, cx + 8, cz + 4, 255, 255, 0, ry=90)
