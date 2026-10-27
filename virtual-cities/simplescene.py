@@ -23,13 +23,13 @@ def main():
         draw_city_block(scene, 3 + i, i * 20)
 
     # TODO (Task 1): call draw_tree to plant a tree. Remember to pass scene first!
-    drawTree(scene, 0, 0, 6)
-    drawTree(scene, 2, 2, 6)
-    draw_stop_light(scene, 4, 6)
-    draw_fire_hydrant(scene, 3.5, 7)
-    draw_sedan(scene, 8, 4, 255, 255, 0, ry=90)
-    draw_sedan(scene, 8, 16, 255, 0, 0, ry=0)
-    draw_building(scene, 0, 4)
+    #drawTree(scene, 0, 0, 6)
+    #drawTree(scene, 2, 2, 6)
+    #draw_stop_light(scene, 4, 6)
+    #draw_fire_hydrant(scene, 3.5, 7)
+    #draw_sedan(scene, 8, 4, 255, 255, 0, ry=90)
+    #draw_sedan(scene, 8, 16, 255, 0, 0, ry=0)
+    #draw_building(scene, 0, 4)
     add_meshes(scene)
     scene.save_scene("simplescene.html", "Simple Sample Scene")
 
