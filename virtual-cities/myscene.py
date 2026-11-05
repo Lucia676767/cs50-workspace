@@ -15,7 +15,7 @@ def main():
     add_ground(scene)
 
     for i in range(3):
-        drawTree(scene, 3 + i, i * 20)
+        drawTree(scene, 3 + i, i * 20, i)
 
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
