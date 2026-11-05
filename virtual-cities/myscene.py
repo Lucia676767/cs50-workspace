@@ -14,34 +14,10 @@ def main():
     setup_cameras(scene)
     add_ground(scene)
 
-    # Draw three snowmen in different places
-    simple_snowman(scene, -4, -8)
-    simple_snowman(scene, 0, -12)
-    simple_snowman(scene, 5, -6)
-
     for i in range(3):
-        draw_city_block(scene, 3 + i, i * 20)
+        drawTree(scene, 3 + i, i * 20)
 
-
-    # TODO (Task 1): call draw_tree to plant a tree. Remember to pass scene first!
-    #drawTree(scene, 0, 0, 6)
-    #drawTree(scene, 2, 2, 6)
-    #draw_stop_light(scene, 4, 6)
-    #draw_fire_hydrant(scene, 3.5, 7)
-    #draw_sedan(scene, 8, 4, 255, 255, 0, ry=90)
-    #draw_sedan(scene, 8, 16, 255, 0, 0, ry=0)
-    #draw_building(scene, 0, 4)
-    add_meshes(scene)
-    scene.save_scene("simplescene.html", "Simple Sample Scene")
-
-def draw_city_block(scene, cx, cz):
-        drawTree(scene, cx, cz, 6)
-        drawTree(scene, cx + 2, cz, 4)
-        draw_stop_light(scene, cx + 4, cz + 6)
-        draw_fire_hydrant(scene, cx + 3.5, cz + 7)
-        draw_sedan(scene, cx + 8, cz + 4, 255, 255, 0, ry=90)
-        draw_sedan(scene, cx + 8, cz +16, 255, 0, 0, ry=0)
-        draw_building(scene, cx, cz + 4)
+    scene.save_scene("myscene.html", "Secret Garden Forest")
 
 
 # Task 1: finish this function (delete "pass" once you add your code)
@@ -50,17 +26,6 @@ def drawTree(scene, cx, cz, height):
     scene.add_cone(cx, height + height/2, cz, 2, height, 34, 139, 34)
 
 #    Task 2 and beyond: define your own functions!
-
-# All functions need "scene" as the first parameter
-# cx and cz say where the snowman's center goes
-def simple_snowman(scene, cx, cz):
-    # Big white bottom ball (radius 1, so its center is 1 above the ground)
-    scene.add_sphere(cx, 1, cz, 1, 255, 255, 255)
-    # Smaller white ball on top (radius 0.7), resting on the bottom ball
-    scene.add_sphere(cx, 2.5, cz, 0.7, 255, 255, 255)
-    # Black box for a hat, sitting on top of the head
-    scene.add_box(cx - 8, 3.4, cz + 4, 0.7, 0.4, 0.7, 0, 0, 0)
-
 
 def setup_lights(scene):
     scene.add_point_light(-100, 200, 0, 200, 200, 200, 1.0)
@@ -75,37 +40,6 @@ def setup_cameras(scene):
 def add_ground(scene):
     # Add a large gray box for the ground
     scene.add_box(0, -25, 0, 1000, 50, 1000, 100, 100, 100)
-
-def add_meshes(scene):
-    scene.add_mesh("meshes/cow.obj", 1, 1, -7, 0, 0, 0, 1, 1, 1, 0, 255, 255)
-    scene.add_textured_mesh("meshes/smokestack/medres.obj", "meshes/smokestack/medres.mtl",
-                            0, 18, -20, 0, 180, 0, 10, 10, 10, 0)
-def draw_fire_hydrant(scene, cx, cz):
-    scene.add_cylinder(cx, .05, cz, 0.25, 0.1, 255, 0, 0)
-    scene.add_cylinder(cx, .45, cz, 0.15, 0.7, 255, 0, 0)
-    scene.add_sphere(cx, .8, cz, 0.15, 255, 0, 0)
-    scene.add_box(cx, .6, cz, 0.5, 0.12, 0.12, 255, 0, 0)
-    scene.add_box(cx, .6, cz, 0.12, 0.12, 0.5, 255, 0, 0)
-
-def draw_stop_light(scene, cx, cz):
-    scene.add_cylinder(cx, 4, cz, 0.5, 8, 0, 0, 0)
-    scene.add_box(cx+4, 8.25, cz, 8, 0.5, 0.5, 0, 0, 0)
-    scene.add_box(cx+6, 7.4, cz, 0.6, 1.2, 0.6, 0, 0, 0)
-    scene.add_sphere(cx+6, 7.8, cz+.23, 0.23, 255, 0, 0)
-    scene.add_sphere(cx+6, 7.4, cz+0.23, 0.23, 255, 255, 0)
-    scene.add_sphere(cx+6, 7, cz+0.23, 0.23, 0, 255, 0)
-
-def draw_sedan(scene, cx, cz, r, g, b, ry):
-    # Create a group positioned at the sedan, with rotation applied
-    group = scene.add_group(cx, 0, cz, 0, ry, 0)
-    group.add_box(0, 1, 0, 1.7, 0.7, 4.5, r, g, b)
-    group.add_box(0, 1.75, .4, 1.4, 0.8, 3.5, r, g, b)
-    group.add_cylinder(0, 0.65, -1.5, 0.5, 1.8,  127, 127, 127,1, 0, 0, 0, 90)
-    group.add_cylinder(0, 0.65, 1.5, 0.5, 1.8,  127, 127, 127,1, 0, 0, 0, 90)
-
-def draw_building(scene, cx, cz):
-    #scene.add_box(-7, 8, 4, 10, 30, 10, 128, 128, 128)
-    scene.add_box(cx - 8, 15, cz, 10, 30, 10, 128, 128, 128)
 
 
 main()
