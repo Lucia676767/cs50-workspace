@@ -9,7 +9,7 @@ from Scene3D import Scene3D
 
 def main():
     scene = Scene3D()
-
+    drawTree
     setup_lights(scene)
     setup_cameras(scene)
     add_ground(scene)
