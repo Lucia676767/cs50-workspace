@@ -13,7 +13,7 @@ def main():
     setup_lights(scene)
     setup_cameras(scene)
     add_ground(scene)
-    DrawMushy
+    #DrawMushy
     for i in range(3):
         drawTree(scene, 3 + i, i * 20, i)
 
