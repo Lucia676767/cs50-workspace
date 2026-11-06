@@ -9,13 +9,12 @@ from Scene3D import Scene3D
 
 def main():
     scene = Scene3D()
-    drawTree
     setup_lights(scene)
     setup_cameras(scene)
     add_ground(scene)
     #DrawMushy
     for i in range(3):
-        drawTree(scene, 3 + i, i * 20, i)
+        drawTree(scene, 3 + i, i * 20, )
 
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
