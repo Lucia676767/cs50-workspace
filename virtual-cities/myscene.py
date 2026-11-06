@@ -13,7 +13,7 @@ def main():
     setup_cameras(scene)
     add_ground(scene)
     #DrawMushy
-    for i in range(3):
+    for i in range(10):
         drawTree(scene, 3 + i, i * 20, random.randint(5,10))
 
     scene.save_scene("myscene.html", "Secret Garden Forest")
