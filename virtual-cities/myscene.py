@@ -4,7 +4,7 @@ Virtual Cities!
 Instructions and Documentation:
 https://gist.github.com/mrsharp-milken/21c48a631c51849a83bf6f05ea9c8b86
 """
-
+import random
 from Scene3D import Scene3D
 
 def main():
@@ -14,7 +14,7 @@ def main():
     add_ground(scene)
     #DrawMushy
     for i in range(3):
-        drawTree(scene, 3 + i, i * 20, )
+        drawTree(scene, 3 + i, i * 20, random.randint(5,10))
 
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
