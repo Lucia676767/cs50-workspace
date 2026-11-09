@@ -7,26 +7,25 @@ https://gist.github.com/mrsharp-milken/21c48a631c51849a83bf6f05ea9c8b86
 import random
 from Scene3D import Scene3D
 
+scene.save_scene("myscene.html", "Secret Garden Forest")
+
+
 def main():
     scene = Scene3D()
     setup_lights(scene)
     setup_cameras(scene)
     add_ground(scene)
-    DrawMushy(scene ,2, 4, 6)
     for i in range(10):
-        drawTree(scene, 1.5+ i, i * 20, random.randint(5,10))
+        DrawTree(scene, 1.5+ i, i * 20, random.randint(5,10))
+        DrawMushy(scene, 1.5+1, 1*20, random.randint(5,10))
 
-    scene.save_scene("myscene.html", "Secret Garden Forest")
-
-def drawTree(scene, cx, cz, height):
+def DrawTree(scene, cx, cz, height):
     scene.add_cylinder(cx , height/2, cz, 0.5, height, 139, 69, 19)
     scene.add_cone(cx, height + height/2, cz, 2, height, 34, 139, 34)
 
 def DrawMushy(scene, cx, cz, height):
    scene.add_cylinder(cx , height/8, cz, 0.5, height-4, 148, 126, 108)
    scene.add_sphere(cx, height-4, cz, 1, 255, 0, 0)
-
-
 
 
 def setup_lights(scene):
