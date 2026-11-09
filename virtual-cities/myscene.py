@@ -13,6 +13,7 @@ def main():
     setup_lights(scene)
     setup_cameras(scene)
     add_ground(scene)
+    DrawMushy(scene cx, cx, height)
     for i in range(10):
         DrawTree(scene, 1.5+ i, i * 20, random.randint(5,10))
        #s DrawMushy(scene, 1.5+i, i * 20, random.randint(1,3))
