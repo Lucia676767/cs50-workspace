@@ -13,16 +13,15 @@ def main():
     setup_lights(scene)
     setup_cameras(scene)
     add_ground(scene)
-    DrawMushy(scene cx, cx, height)
     for i in range(10):
         DrawTree(scene, 1.5+ i, i * 20, random.randint(5,10))
-       #s DrawMushy(scene, 1.5+i, i * 20, random.randint(1,3))
+        DrawMushy(scene, 1.5+i, i * 20, random.randint(1,3))
 
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
 def DrawTree(scene, cx, cz, height):
     scene.add_cylinder(cx , height/2, cz, 0.5, height, 139, 69, 19)
-    scene.add_cone(cx, height + height/2, cz, 2, height, 34, 139, 34)
+    scene.add_cone(cx, height + height-4, cz, 2, height, 34, 139, 34)
 
 def DrawMushy(scene, cx, cz, height):
    scene.add_cylinder(cx , height/8, cz, 0.5, height-4, 148, 126, 108)
