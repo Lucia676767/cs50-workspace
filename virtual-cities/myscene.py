@@ -19,11 +19,12 @@ def main():
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
 def drawTree(scene, cx, cz, height):
-    scene.add_cylinder(cx, height/2, cz, 0.5, height, 139, 69, 19)
+    scene.add_cylinder(cx , height/2, cz, 0.5, height, 139, 69, 19)
     scene.add_cone(cx, height + height/2, cz, 2, height, 34, 139, 34)
 
 def DrawMushy(scene, cx, cz, height):
-   scene.add_cylinder(cx + 2, height, cz, 0.5, height, 139, 69, 19)
+   scene.add_cylinder(cx , height/8, cz, 0.5, height-2, 148, 126, 108)
+   scene.add_sphere(cx, height-4, cz, 1, 255, 0, 0)
 
 
 
