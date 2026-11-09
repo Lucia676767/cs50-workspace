@@ -12,7 +12,7 @@ def main():
     setup_lights(scene)
     setup_cameras(scene)
     add_ground(scene)
-    #DrawMushy
+    DrawMushy(scene)
     for i in range(10):
         drawTree(scene, 1.5+ i, i * 20, random.randint(5,10))
 
@@ -23,7 +23,7 @@ def drawTree(scene, cx, cz, height):
     scene.add_cone(cx, height + height/2, cz, 2, height, 34, 139, 34)
 
 def DrawMushy(scene, cx, cz, height):
-   scene.add_cylinder(cx, height, cz, 0.5, height, 139, 69, 19)
+   scene.add_cylinder(cx + 2, height, cz, 0.5, height, 139, 69, 19)
 
 
 
