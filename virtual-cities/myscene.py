@@ -15,7 +15,7 @@ def main():
     add_ground(scene)
     for i in range(10):
         DrawTree(scene, 1.5+ i, i * 20, random.randint(5,10))
-        DrawMushy(scene, 1.5+i, i * 20, random.randint(1,3))
+        DrawMushy(scene, 1+i, i * 10, 8)
 
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
