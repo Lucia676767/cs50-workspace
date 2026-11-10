@@ -14,18 +14,13 @@ def main():
     setup_cameras(scene)
     add_ground(scene)
     ForestCorner(scene, 2, 2, 2)
-    #for i in range(10):
-        #DrawTree(scene, 1.5+ i, i * 20, random.randint(5,10))
-       # DrawMushy(scene, 3+i, i * 20, 4)
-        #DrawTreeDif(scene, -6+i, i *20, random.randint(10,20))
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
 def ForestCorner(scene, cx, cz, cy):
      for i in range(10):
         DrawTree(scene, 1.5+ i, i * 20, random.randint(5,10))
         DrawMushy(scene, 3+i, i * 20, 4)
-        DrawTreeDif(scene, -4.5s+i, i *20, random.randint(10,20))
-
+        DrawTreeDif(scene, -4.5+i, i *20, random.randint(10,20))
 
 def DrawTreeDif(scene, cx, cz, height):
     scene.add_cylinder(cx , height/2, cz, 1, height, 139, 69, 19)
