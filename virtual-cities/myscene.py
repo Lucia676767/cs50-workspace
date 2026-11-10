@@ -16,9 +16,13 @@ def main():
     for i in range(10):
         DrawTree(scene, 1.5+ i, i * 20, random.randint(5,10))
         DrawMushy(scene, 3+i, i * 20, 4)
-        
+        DrawTreeDif
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
+def DrawTreeDif(scene, cx, cz, height):
+    scene.add_cylinder(cx , height/2, cz, 0.5, height, 139, 69, 19)
+    add_ellipsoid(cx, cy, cz, radx, rady, radz, r, g, b)
+    
 def DrawTree(scene, cx, cz, height):
     scene.add_cylinder(cx , height/2, cz, 0.5, height, 139, 69, 19)
     scene.add_cone(cx, height + height-4, cz, 2, height, 34, 139, 34)
