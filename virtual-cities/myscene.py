@@ -15,7 +15,7 @@ def main():
     add_ground(scene)
     for i in range(10):
         DrawTree(scene, 1.5+ i, i * 20, random.randint(5,10))
-        DrawMushy(scene, 1+i, i * 10, 8)
+        DrawMushy(scene, 3+i, i * 20, 4)
 
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
@@ -23,9 +23,10 @@ def DrawTree(scene, cx, cz, height):
     scene.add_cylinder(cx , height/2, cz, 0.5, height, 139, 69, 19)
     scene.add_cone(cx, height + height-4, cz, 2, height, 34, 139, 34)
 
-def DrawMushy(scene, cx, cz, height):
-   scene.add_cylinder(cx , height/8, cz, 0.5, height-4, 148, 126, 108)
-   scene.add_sphere(cx, height-4, cz, 1, 255, 0, 0)
+for i in range(10):
+    def DrawMushy(scene, cx, cz, height):
+        scene.add_cylinder(cx , height/8, cz, 0.5, height, 255, 255, 255)
+        scene.add_sphere(cx, height-2, cz, 1, 255, 0, 0)
 
 
 def setup_lights(scene):
