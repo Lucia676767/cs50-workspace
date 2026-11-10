@@ -23,10 +23,9 @@ def DrawTree(scene, cx, cz, height):
     scene.add_cylinder(cx , height/2, cz, 0.5, height, 139, 69, 19)
     scene.add_cone(cx, height + height-4, cz, 2, height, 34, 139, 34)
 
-for i in range(10):
-    def DrawMushy(scene, cx, cz, height):
-        scene.add_cylinder(cx , height/8, cz, 0.5, height, 255, 255, 255)
-        scene.add_sphere(cx, height-2, cz, 1, 255, 0, 0)
+def DrawMushy(scene, cx, cz, height):
+    scene.add_cylinder(cx , height/8, cz, 0.5, height, 255, 255, 255)
+    scene.add_sphere(cx, height-2, cz, 1, 255, 0, 0)
 
 
 def setup_lights(scene):
