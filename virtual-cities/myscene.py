@@ -21,11 +21,11 @@ def main():
 
 def DrawTreeDif(scene, cx, cz, height):
     scene.add_cylinder(cx , height/2, cz, 1, height, 139, 69, 19)
-    scene.add_ellipsoid(cx, height-4s+height/4, cz, 2, 4, 2, 0, 100, 0)
+    scene.add_ellipsoid(cx, height-4+height/4, cz, 2, 4, 2, 236, 183, 83)
 
 def DrawTree(scene, cx, cz, height):
     scene.add_cylinder(cx, height/2, cz, 0.5, height, 139, 69, 19)
-    scene.add_cone(cx, height + height-4, cz, 2, height, 34, 139, 34)
+    scene.add_cone(cx, height + height-3, cz, 2, height, 34, 139, 34)
 
 def DrawMushy(scene, cx, cz, height):
     scene.add_cylinder(cx , height/8, cz-2.5, 0.5, height, 255, 255, 255)
