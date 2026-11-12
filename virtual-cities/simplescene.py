@@ -27,11 +27,11 @@ num_items = 12
 radius = 100
 center_x, center_y = 250, 250
 
-    for i in range(num_items):
-        angle = (2 * math.pi / num_items) * i
-        x = center_x + radius * math.cos(angle)
-        y = center_y + radius * math.sin(angle)
-        draw_city_block(scene, 3 + i, i * 20)
+for i in range(num_items):
+    angle = (2 * math.pi / num_items) * i
+    x = center_x + radius * math.cos(angle)
+    y = center_y + radius * math.sin(angle)
+    draw_city_block(scene, 3 + i, i * 20)
 
 
     # TODO (Task 1): call draw_tree to plant a tree. Remember to pass scene first!
