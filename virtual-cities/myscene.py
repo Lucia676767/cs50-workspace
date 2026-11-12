@@ -39,7 +39,7 @@ def DrawMushy(scene, cx, cz, height):
 def DrawBunny(scene, cx, cz, height):
     scene.add_ellipsoid(cx, cz-4 , height*2, 2, 4, 2, 255, 255, 255)
     scene.add_sphere(cx, height-.5, 8, 1.8, 255, 255, 255)
-
+    scene.add_cylinder( 0.65, -1.5, 0.5, 1.8,  10, 10, 255, 255, 255)
 
 def setup_lights(scene):
     scene.add_point_light(-100, 200, 0, 200, 200, 200, 1.0)
