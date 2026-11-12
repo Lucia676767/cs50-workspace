@@ -19,7 +19,18 @@ def main():
     simple_snowman(scene, 0, -12)
     simple_snowman(scene, 5, -6)
 
-    for i in range(3):
+    #for i in range(3):
+        #draw_city_block(scene, 3 + i, i * 20)
+import math
+
+num_items = 12
+radius = 100
+center_x, center_y = 250, 250
+
+    for i in range(num_items):
+        angle = (2 * math.pi / num_items) * i
+        x = center_x + radius * math.cos(angle)
+        y = center_y + radius * math.sin(angle)
         draw_city_block(scene, 3 + i, i * 20)
 
 
