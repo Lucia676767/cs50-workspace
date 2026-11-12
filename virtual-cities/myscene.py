@@ -24,7 +24,7 @@ def ForestCorner(scene, cx, cz, cy):
         #DrawMushy(scene, 3+i, i * 20, 4)
         #DrawTreeDif(scene, -4.5+i, i *20, random.randint(10,20))
         #import math
-
+    import math
     num_items = 10
     radius = 100
     center_x, center_y = 250, 250
@@ -36,7 +36,6 @@ def ForestCorner(scene, cx, cz, cy):
         DrawTree(scene, 1.5+ i, i * 20, random.randint(5,10))
         DrawMushy(scene, 3+i, i * 20, 4)
         DrawTreeDif(scene, -4.5+i, i *20, random.randint(10,20))
-        import math
 
 
 def DrawTreeDif(scene, cx, cz, height):
