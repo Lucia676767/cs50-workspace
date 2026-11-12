@@ -13,9 +13,10 @@ def main():
     setup_lights(scene)
     setup_cameras(scene)
     add_ground(scene)
-    ForestCorner(scene, 2, 2, 2)
-    scene.save_scene("myscene.html", "Secret Garden Forest")
+    ForestCorner(scene, 6, 6, 6)
     DrawBunny(scene, 4, 4, 4)
+
+    scene.save_scene("myscene.html", "Secret Garden Forest")
 
 def ForestCorner(scene, cx, cz, cy):
      for i in range(10):
@@ -36,8 +37,8 @@ def DrawMushy(scene, cx, cz, height):
     scene.add_sphere(cx, height-2, cz-2.5, 1, 255, 0, 0)
 
 def DrawBunny(scene, cx, cz, height):
-    scene.add_ellipsoid(cx, cz , height-4+height/4, 2, 4, 2, 236, 183, 83)
-    
+    scene.add_ellipsoid(cx, cz , height-4+height/4, 2, 4, 2, 255, 255, 255)
+
 
 def setup_lights(scene):
     scene.add_point_light(-100, 200, 0, 200, 200, 200, 1.0)
