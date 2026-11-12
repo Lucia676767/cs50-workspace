@@ -15,6 +15,7 @@ def main():
     add_ground(scene)
     ForestCorner(scene, 2, 2, 2)
     scene.save_scene("myscene.html", "Secret Garden Forest")
+    
 
 def ForestCorner(scene, cx, cz, cy):
      for i in range(10):
@@ -35,8 +36,8 @@ def DrawMushy(scene, cx, cz, height):
     scene.add_sphere(cx, height-2, cz-2.5, 1, 255, 0, 0)
 
 def DrawBunny(scene, cx, cz, height)
-    scene.add_cylinder(cx , height/8, cz-2.5, 0.5, height, 255, 255, 255)
-    
+    scene..add_cylinder(0, 0.65, -1.5, 0.5, 1.8,  127, 127, 127,1, 0, 0, 0, 90)
+
 
 def setup_lights(scene):
     scene.add_point_light(-100, 200, 0, 200, 200, 200, 1.0)
