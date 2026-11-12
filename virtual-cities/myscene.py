@@ -19,10 +19,25 @@ def main():
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
 def ForestCorner(scene, cx, cz, cy):
-     for i in range(10):
-        DrawTree(scene, 1.5+ i, i * 20, random.randint(5,10))
-        DrawMushy(scene, 3+i, i * 20, 4)
-        DrawTreeDif(scene, -4.5+i, i *20, random.randint(10,20))
+     #for i in range(10):
+        #DrawTree(scene, 1.5+ i, i * 20, random.randint(5,10))
+        #DrawMushy(scene, 3+i, i * 20, 4)
+        #DrawTreeDif(scene, -4.5+i, i *20, random.randint(10,20))
+        #import math
+
+n um_items = 10
+radius = 100
+center_x, center_y = 250, 250
+
+for i in range(10):
+    angle = (2 * math.pi / num_items) * i
+    x = center_x + radius * math.cos(angle)
+    y = center_y + radius * math.sin(angle)
+    DrawTree(scene, 1.5+ i, i * 20, random.randint(5,10))
+    DrawMushy(scene, 3+i, i * 20, 4)
+    DrawTreeDif(scene, -4.5+i, i *20, random.randint(10,20))
+    import math
+
 
 def DrawTreeDif(scene, cx, cz, height):
     scene.add_cylinder(cx , height/2, cz, 1, height, 139, 69, 19)
