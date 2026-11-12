@@ -38,15 +38,15 @@ def ForestCorner(scene, cx, cz, cy):
         DrawTreeDif(scene, -4.5+i, i *20,random.randint(10,20), 250, 250)
 
 
-def DrawTreeDif(scene, cx, cz, height):
+def DrawTreeDif(scene, cx, cz, height, x, y):
     scene.add_cylinder(cx , height/2, cz, 1, height, 139, 69, 19)
     scene.add_ellipsoid(cx, height-4+height/4, cz, 2, 4, 2, 236, 183, 83)
 
-def DrawTree(scene, cx, cz, height):
+def DrawTree(scene, cx, cz, height, x, y):
     scene.add_cylinder(cx, height/2, cz, 0.5, height, 139, 69, 19)
     scene.add_cone(cx, height + height-6, cz, 2, height, 34, 139, 34)
 
-def DrawMushy(scene, cx, cz, height):
+def DrawMushy(scene, cx, cz, height, x, y):
     scene.add_cylinder(cx , height/8, cz-2.5, 0.5, height, 255, 255, 255)
     scene.add_sphere(cx, height-2, cz-2.5, 1, 255, 0, 0)
 
