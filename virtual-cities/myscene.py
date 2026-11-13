@@ -29,8 +29,8 @@ def ForestCorner(scene, cx, cz, cy):
     radius = 100
     center_x, center_y = 250, 250
 
-    for i in range(2*math.pi / num_items):
-        angle = (2 * math.pi / 10) * i
+    for i in range(num_items):
+        angle = (2 * math.pi / num_items) * i
         x = center_x + radius * math.cos(angle)
         y = center_y + radius * math.sin(angle)
         DrawTree(scene, 1.5+ i, i * 20, random.randint(5,10), x ,y)
