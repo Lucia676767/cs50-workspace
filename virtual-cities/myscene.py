@@ -34,7 +34,7 @@ def ForestCorner(scene, cx, cz, cy):
         x = center_x + radius * math.cos(angle)
         y = center_y + radius * math.sin(angle)
         DrawTree(scene, 1.5+ i, i * 20, random.randint(5,10), x ,y)
-        DrawMushy(scene, 3+i, i * 20, 4, 250, 250)
+        DrawMushy(scene, 3+i, i * 20, 4, 250, 250, x, y)
         DrawTreeDif(scene, -4.5+i, i *20,random.randint(10,20), x, y)
 
 
