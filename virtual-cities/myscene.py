@@ -29,7 +29,7 @@ def ForestCorner(scene, cx, cz, cy):
     radius = 100
     center_x, center_y = 250, 250
 
-    for i in range(10):well 
+    for i in range(num_items):
         angle = (2 * math.pi / 10) * i
         x = center_x + radius * math.cos(angle)
         y = center_y + radius * math.sin(angle)
