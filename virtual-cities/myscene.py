@@ -22,7 +22,7 @@ def ForestCorner(scene, cx, cz, cy):
     import math
     num_items = 10
     radius = 100
-    center_x, center_z = 250, 250
+    center_x, center_z = 4, 4
 
     for i in range(num_items):
         angle = (2 * math.pi / num_items) * i
