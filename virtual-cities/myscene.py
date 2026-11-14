@@ -53,14 +53,14 @@ def DrawBunny(scene, cx, cz, height):
     group.add_cylinder(cx, 2, 5, .5, 1, 255, 255, 255, 180)
 
 def setup_lights(scene):
-    scene.add_point_light(400, 200, 0, 200, 200, 200, 1.0)
-    scene.add_point_light(400, 200, 0, 200, 200, 200, 1.0)
-    scene.add_point_light(400, 0, -100, 200, 200, 200, 1.0)
-    scene.add_point_light(400, 0, 100, 200, 200, 200, 1.0)
+    scene.add_point_light(-100, 200, 0, 200, 200, 200, 1.0)
+    scene.add_point_light(100, 200, 0, 200, 200, 200, 1.0)
+    scene.add_point_light(0, 0, -100, 200, 200, 200, 1.0)
+    scene.add_point_light(0, 0, 100, 200, 200, 200, 1.0)
 
 def setup_cameras(scene):
-    scene.add_camera(250, 50, 250, 0)
-    scene.add_camera(250, 50, 40, 180)
+    scene.add_camera(0, 2, 0, 0)
+    scene.add_camera(0, 2, -40, 180)
 
 def add_ground(scene):
     # Add a large gray box for the ground
