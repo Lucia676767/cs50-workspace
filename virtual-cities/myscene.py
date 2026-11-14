@@ -39,16 +39,16 @@ def ForestCorner(scene, cx, cz, cy):
 
 
 def DrawTreeDif(scene, cx, cz, height, x, y):
-    scene.add_cylinder(cx , height/2, cz, 1, height, 139, 69, 19)
-    scene.add_ellipsoid(cx, height-4+height/4, cz, 2, 4, 2, 236, 183, 83)
+    scene.add_cylinder(cx , height/2, cz, 1, height,x, y, 139, 69, 19)
+    scene.add_ellipsoid(cx, height-4+height/4, cz, 2, 4, 2, x, y, 236, 183, 83)
 
 def DrawTree(scene, cx, cz, height, x, y):
-    scene.add_cylinder(cx, height/2, cz, 0.5, height, 139, 69, 19)
-    scene.add_cone(cx, height + height-6, cz, 2, height, 34, 139, 34)
+    scene.add_cylinder(cx, height/2, cz, 0.5, height, x, y, 139, 69, 19)
+    scene.add_cone(cx, height + height-6, cz, 2, height, x, y, 34, 139, 34)
 
 def DrawMushy(scene, cx, cz, height, x, y):
-    scene.add_cylinder(cx , height/8, cz-2.5, 0.5, height, 255, 255, 255)
-    scene.add_sphere(cx, height-2, cz-2.5, 1, 255, 0, 0)
+    scene.add_cylinder(cx , height/8, cz-2.5, 0.5, height, x, y, 255, 255, 255)
+    scene.add_sphere(cx, height-2, cz-2.5, 1, x, y, 255, 0, 0)
 
 def DrawBunny(scene, cx, cz, height):
     group = scene.add_group(cx, 0, cz, 0, 0, 0)
