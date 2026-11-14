@@ -14,7 +14,7 @@ def main():
     setup_cameras(scene)
     add_ground(scene)
     ForestCorner(scene, 6, 6, 6)
-    DrawBunny(scene, 250, 250, 250)
+    DrawBunny(scene, 4, 4, 4)
 
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
