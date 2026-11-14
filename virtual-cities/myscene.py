@@ -19,23 +19,18 @@ def main():
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
 def ForestCorner(scene, cx, cz, cy):
-     #for i in range(10):
-        #DrawTree(scene, 1.5+ i, i * 20, random.randint(5,10))
-        #DrawMushy(scene, 3+i, i * 20, 4)
-        #DrawTreeDif(scene, -4.5+i, i *20, random.randint(10,20))
-        #import math
     import math
     num_items = 10
     radius = 100
-    center_x, center_y = 250, 250
+    center_x, center_z = 250, 250
 
     for i in range(num_items):
         angle = (2 * math.pi / num_items) * i
         x = center_x + radius * math.cos(angle)
-        y = center_y + radius * math.sin(angle)
-        print("X: ",x," Y:",y)
-        DrawTree(scene, x, y, random.randint(5,10))
-        DrawMushy(scene, 3+i, i * 20, 4, x, y)
+        z = center_z + radius * math.sin(angle)
+        print("X: ",x," Z:",z)
+        DrawTree(scene, x, z, random.randint(5,10))
+        DrawMushy(scene, x, z, 4)
         DrawTreeDif(scene, -4.5+i, i *20,random.randint(10,20), x, y)
 
 
@@ -47,9 +42,9 @@ def DrawTree(scene, cx, cz, height):
     scene.add_cylinder(cx, height/2, cz, 0.5, height, 139, 69, 19)
     scene.add_cone(cx, height + height-6, cz, 2, height, 34, 139, 34)
 
-def DrawMushy(scene, cx, cz, height, x, y):
-    scene.add_cylinder(cx , height/8, cz-2.5, 0.5, height, 255, 255, 255, x, y)
-    scene.add_sphere(cx, height-2, cz-2.5, 1, 255, 0, 0, x, y)
+def DrawMushy(scene, cx, cz, height):
+    scene.add_cylinder(cx , height/8, cz-2.5, 0.5, height, 255, 255, 255)
+    scene.add_sphere(cx, height-2, cz-2.5, 1, 255, 0, 0)
 
 def DrawBunny(scene, cx, cz, height):
     group = scene.add_group(cx, 0, cz, 0, 0, 0)
