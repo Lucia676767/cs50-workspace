@@ -31,12 +31,12 @@ def ForestCorner(scene, cx, cz, cy):
         print("X: ",x," Z:",z)
         DrawTree(scene, x, z, random.randint(5,10))
         DrawMushy(scene, x, z, 4)
-        DrawTreeDif(scene, -4.5+i, i *20,random.randint(10,20), x, y)
+        DrawTreeDif(scene, x, z,random.randint(10,20))
 
 
-def DrawTreeDif(scene, cx, cz, height, x, y):
-    scene.add_cylinder(cx , height/2, cz, 1, height, 139, 69, 19, x, y,)
-    scene.add_ellipsoid(cx, height-4+height/4, cz, 2, 4, 2, 236, 183, 83, x, y,)
+def DrawTreeDif(scene, cx, cz, height):
+    scene.add_cylinder(cx , height/2, cz, 1, height, 139, 69, 19)
+    scene.add_ellipsoid(cx, height-4+height/4, cz, 2, 4, 2, 236, 183, 83)
 
 def DrawTree(scene, cx, cz, height):
     scene.add_cylinder(cx, height/2, cz, 0.5, height, 139, 69, 19)
