@@ -53,10 +53,9 @@ def DrawBear(scene, cx, cz, height):
     group = scene.add_group(cx, 0, cz, 0, 0, 0)
     group.add_ellipsoid(cx, 3 , height*2, 3, 2, 4, 150, 75, 0)
     group.add_sphere(cx, 6, 4, 2, 150, 75, 0)
-    group.add_sphere(cx+2, 8, 4, 1, 150, 75, 0)
-    group.add_sphere(cx-2, 8, 4, 1, 150, 75, 0)
-    group.add_cylinder(cx-1.5, cx-height, +8, .5, 4, 255, 150, 75, 0)
-    group.add_cylinder(cx+1.5, cx-height, +8zz, .5, 4, 255, 150, 75, 0)
+    group.add_sphere(cx+2, , 4, 1, 150, 75, 0)
+    group.add_sphere(cx-2, 9, 4, 1, 150, 75, 0)
+    group.add_cylinder(cx-2, 2, 5, .5, 1, 255, 255, 255, 180)
 
 def setup_lights(scene):
     scene.add_point_light(-100, 200, 0, 200, 200, 200, 1.0)
