@@ -14,14 +14,14 @@ def main():
     setup_cameras(scene)
     add_ground(scene)
     ForestCorner(scene, 6, 6, 6)
-    DrawBunny(scene, 4, 4, 4)
-    DrawLake(scene,4, 4, 4)
+    DrawBear(scene, 4, 4, 4)
+    DrawLake(scene,0, 0, 0)
 
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
 def ForestCorner(scene, cx, cz, cy):
     import math
-    num_items = 10
+    num_items = 25
     radius = 100
     center_x, center_z = 4, 4
 
@@ -35,7 +35,7 @@ def ForestCorner(scene, cx, cz, cy):
         DrawTreeDif(scene, x+15, z+15,random.randint(10,20))
 
 def DrawLake(scene, cx, cz, cy):
-    scene.add_cylinder(cx, cy, cz, 50, 1, 79, 115, 142)
+    scene.add_cylinder(cx, cy, cz, 50, .5, 79, 115, 142)
 
 def DrawTreeDif(scene, cx, cz, height):
     scene.add_cylinder(cx , height/2, cz, 1, height, 139, 69, 19)
@@ -49,11 +49,11 @@ def DrawMushy(scene, cx, cz, height):
     scene.add_cylinder(cx , height/8, cz-2.5, 0.5, height, 255, 255, 255)
     scene.add_sphere(cx, height-2, cz-2.5, 1, 255, 0, 0)
 
-def DrawBunny(scene, cx, cz, height):
+def DrawBear(scene, cx, cz, height):
     group = scene.add_group(cx, 0, cz, 0, 0, 0)
-    group.add_ellipsoid(cx, cz-4 , height*2, 2, 4, 2, 255, 255, 255)
-    group.add_sphere(cx, height-.5, 8, 1.8, 255, 255, 255)
-    group.add_cylinder(cx, 2, 5, .5, 1, 255, 255, 255, 180)
+    group.add_ellipsoid(cx, cz-4 , height*2, 3, 2, 4, 150, 75, 0)
+    group.add_sphere(cx, cz-2, 1, 1.5, 150, 75, 0)
+    #group.add_cylinder(cx, 2, 5, .5, 1, 255, 255, 255, 180)
 
 def setup_lights(scene):
     scene.add_point_light(-100, 200, 0, 200, 200, 200, 1.0)
