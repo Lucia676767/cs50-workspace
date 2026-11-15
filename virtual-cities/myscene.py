@@ -51,10 +51,10 @@ def DrawMushy(scene, cx, cz, height):
 
 def DrawBear(scene, cx, cz, height):
     group = scene.add_group(cx, 0, cz, 0, 0, 0)
-    group.add_ellipsoid(cx, cz-3 , height*2, 3, 2, 4, 150, 75, 0)
-    group.add_sphere(cx, cz-1, 4, 2, 150, 75, 0)
-    group.add_sphere(cx+2, 4, 3, 1, 150, 75, 0)
-    group.add_sphere(cx-2, 4, 3, 1, 150, 75, 0)
+    group.add_ellipsoid(cx, 3 , height*2, 3, 2, 4, 150, 75, 0)
+    group.add_sphere(cx, 4.5, 4, 2, 150, 75, 0)
+    group.add_sphere(cx+2, 4, 4, 1, 150, 75, 0)
+    group.add_sphere(cx-2, 4, 4, 1, 150, 75, 0)
     #group.add_cylinder(cx, 2, 5, .5, 1, 255, 255, 255, 180)
 
 def setup_lights(scene):
