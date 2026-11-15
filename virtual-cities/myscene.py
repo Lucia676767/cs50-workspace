@@ -60,8 +60,8 @@ def DrawBear(scene, cx, cz, ry):
     group.add_sphere(cx+2, 8, 4, 1, 150, 75, 0)
     group.add_sphere(cx-2, 8, 4, 1, 150, 75, 0)
     #front legs
-    group.add_cylinder(cx-1, 2, cz+1, .5, 4, 255, 150, 75)
-    group.add_cylinder(cx+1, 2, cz+1, .5, 4, 255, 150, 75)
+    group.add_cylinder(cx-1, 2, cz, .5, 4, 255, 150, 75)
+    group.add_cylinder(cx+1, 2, cz, .5, 4, 255, 150, 75)
     #back legs
     #group.add_cylinder(cx-1, 2, cz+3, .5, 4, 255, 150, 75)
     #group.add_cylinder(cx+1, 2, cz+3, .5, 4, 255, 150, 75)
