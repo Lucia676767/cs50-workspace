@@ -37,8 +37,8 @@ def ForestCorner(scene, cx, cz, cy):
         DrawMushy(scene, x+10, z+10, 4)
         DrawTreeDif(scene, x+15, z+15,random.randint(10,20))
 
-def DrawLake(scene, cx, cz, cy):
-    scene.add_cylinder(cx, cy, cz, 50, .5, 79, 115, 142)
+def DrawLake(scene, cx, cz, cy, metalness):
+    scene.add_cylinder(cx, cy, cz, 50, .5, 79, 115, 142, 1)
 
 def DrawTreeDif(scene, cx, cz, height):
     scene.add_cylinder(cx , height/2, cz, 1, height, 139, 69, 19)
