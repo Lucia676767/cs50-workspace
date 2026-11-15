@@ -60,7 +60,7 @@ def DrawBear(scene, cx, cz, ry):
     #legs
     group.add_cylinder(cx-1, cx-2, cz+6, .5, 4, 255, 150, 75)
     group.add_cylinder(cx+1, cx-2, cz+6, .5, 4, 255, 150, 75)
-    group.add_cylinder(cx+2, cx+2, cz+4, .5, 4, 255, 150, 75)
+    group.add_cylinder(cx-2, cx-2, cz+4, .5, 4, 255, 150, 75)
     group.add_cylinder(cx+2, cx-2, cz+4, .5, 4, 255, 150, 75)
 
 def setup_lights(scene):
