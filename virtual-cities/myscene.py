@@ -15,6 +15,7 @@ def main():
     add_ground(scene)
     ForestCorner(scene, 6, 6, 6)
     DrawBunny(scene, 4, 4, 4)
+    DrawLake(scene,4, 4, 4)
 
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
@@ -33,6 +34,8 @@ def ForestCorner(scene, cx, cz, cy):
         DrawMushy(scene, x+10, z+10, 4)
         DrawTreeDif(scene, x+15, z+15,random.randint(10,20))
 
+def DrawLake(scene, cx, cz, cy):
+    scene.add_cylinder(cx, cy, cz, 50, 1, 79, 115, 142)
 
 def DrawTreeDif(scene, cx, cz, height):
     scene.add_cylinder(cx , height/2, cz, 1, height, 139, 69, 19)
