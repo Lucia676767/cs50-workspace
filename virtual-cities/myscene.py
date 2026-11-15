@@ -16,6 +16,7 @@ def main():
     ForestCorner(scene, 6, 6, 6)
     DrawBear(scene, 4, 4, 90)
     DrawBear(scene, 6, 6, 0)
+    DrawBear(scene, 7, 7, 180)
     DrawLake(scene,0, 0, 0)
 
     scene.save_scene("myscene.html", "Secret Garden Forest")
