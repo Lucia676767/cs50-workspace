@@ -14,8 +14,8 @@ def main():
     setup_cameras(scene)
     add_ground(scene)
     ForestCorner(scene, 6, 6, 6)
-    DrawBear(scene, 4, 4, 4)
-    DrawBear(scene, 2, 4, 4)
+    DrawBear(scene, 4, 4, 4, ry=0)
+    DrawBear(scene, 2, 4, 4, ry=90)
     DrawLake(scene,0, 0, 0)
 
     scene.save_scene("myscene.html", "Secret Garden Forest")
@@ -54,10 +54,10 @@ def DrawBear(scene, cx, cz, ry):
     group = scene.add_group(cx, 0, cz, 0, ry, 0)
 
     group.add_ellipsoid(cx, 3 , 8, 3, 2, 4, 150, 75, 0, ry=90)
-    group.add_sphere(cx, 6, 4, 2, 150, 75, 0, ry=90)
+    group.add_sphere(cx, 6, 4, 2, 150, 75, 0, 90)
 
-    group.add_sphere(cx+2, 8, 4, 1, 150, 75, 0, ry=90)
-    group.add_sphere(cx-2, 8, 4, 1, 150, 75, 0, ry=90)
+    group.add_sphere(cx+2, 8, 4, 1, 150, 75, 0, 90)
+    group.add_sphere(cx-2, 8, 4, 1, 150, 75, 0, 90)
     group.add_cylinder(cx-1.5, cx-1.5, cz+6.5, .5, 4, 255, 150, 75, 0, ry=90)
     group.add_cylinder(cx+1.5, cx-1.5, cz+6.5, .5, 4, 255, 150, 75, 0, ry=90)
     group.add_cylinder(cx-1.5, cx-1.5, cz+9, .5, 4, 255, 150, 75, 0, ry=90)
