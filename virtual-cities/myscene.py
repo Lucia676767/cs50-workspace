@@ -17,7 +17,7 @@ def main():
     DrawBear(scene, 4, 4, 90)
     DrawBear(scene, 6, 6, 0)
     DrawBear(scene, 7, 7, 180)
-    DrawLake(scene, 0, 0, 0, metalness=1000)
+    DrawLake(scene, 0, 0, 0, metalness=1.0, roughness=0.1s)
     #DrawGrass(scene, 5, 5, 5)
 
     scene.save_scene("myscene.html", "Secret Garden Forest")
@@ -37,8 +37,8 @@ def ForestCorner(scene, cx, cz, cy):
         DrawMushy(scene, x+10, z+10, 4)
         DrawTreeDif(scene, x+15, z+15,random.randint(10,20))
 
-def DrawLake(scene, cx, cz, cy, metalness):
-    scene.add_cylinder(cx, cy, cz, 50, .5, 79, 115, 142, metalness)
+def DrawLake(scene, cx, cz, cy, metalness, roughness):
+    scene.add_cylinder(cx, cy, cz, 50, .5, 79, 115, 142, metalness, roughness)
 
 def DrawTreeDif(scene, cx, cz, height):
     scene.add_cylinder(cx , height/2, cz, 1, height, 139, 69, 19)
