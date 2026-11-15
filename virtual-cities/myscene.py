@@ -49,8 +49,8 @@ def DrawMushy(scene, cx, cz, height):
     scene.add_cylinder(cx , height/8, cz-2.5, 0.5, height, 255, 255, 255)
     scene.add_sphere(cx, height-2, cz-2.5, 1, 255, 0, 0)
 
-def DrawBear(scene, cx, cz, height):
-    group = scene.add_group(cx, 0, cz, 0, 0, 0)
+def DrawBear(scene, cx, cz, r, g, b, ry):
+    group = scene.add_group(cx, 0, cz, 0, ry, 0)
     group.add_ellipsoid(cx, 3 , height*2, 3, 2, 4, 150, 75, 0)
     group.add_sphere(cx, 6, 4, 2, 150, 75, 0)
     group.add_sphere(cx+2, 8, 4, 1, 150, 75, 0)
