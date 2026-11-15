@@ -58,10 +58,10 @@ def DrawBear(scene, cx, cz, ry):
     group.add_sphere(cx+2, 8, 4, 1, 150, 75, 0)
     group.add_sphere(cx-2, 8, 4, 1, 150, 75, 0)
     #legs
-    group.add_cylinder(cx-1.5, cx-2, cz+6.5, .5, 4, 255, 150, 75)
-    group.add_cylinder(cx+1.5, cx-2, cz+6.5, .5, 4, 255, 150, 75)
-    group.add_cylinder(cx-1.5, cx+2, cz+9, .5, 4, 255, 150, 75)
-    group.add_cylinder(cx+1.5, cx-2, cz+9, .5, 4, 255, 150, 75)
+    group.add_cylinder(cx-1, cx-2, cz+6, .5, 4, 255, 150, 75)
+    group.add_cylinder(cx+1, cx-2, cz+6, .5, 4, 255, 150, 75)
+    group.add_cylinder(cx-1, cx+2, cz+4, .5, 4, 255, 150, 75)
+    group.add_cylinder(cx+1, cx-2, cz+4, .5, 4, 255, 150, 75)
 
 def setup_lights(scene):
     scene.add_point_light(-100, 200, 0, 200, 200, 200, 1.0)
