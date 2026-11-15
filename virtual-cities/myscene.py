@@ -53,22 +53,22 @@ def DrawMushy(scene, cx, cz, height):
 def DrawBear(scene, cx, cz, ry):
     group = scene.add_group(cx, 0, cz, 0, ry, 0)
 
-    group.add_ellipsoid(cx, 3 , 8, 3, 2, 4, 150, 75, 0)
-    group.add_sphere(cx, 6, 4, 2, 150, 75, 0, 90)
-    
-    group.add_sphere(cx+2, 8, 4, 1, 150, 75, 0, 90)
-    group.add_sphere(cx-2, 8, 4, 1, 150, 75, 0, 90)
-    group.add_cylinder(cx-1.5, cx-height, +6.5, .5, 4, 255, 150, 75, ry=90)
-    group.add_cylinder(cx+1.5, cx-height, +6.5, .5, 4, 255, 150, 75, 0, ry=90)
-    group.add_cylinder(cx-1.5, cx-height, +9, .5, 4, 255, 150, 75, 0, ry=90)
-    group.add_cylinder(cx+1.5, cx-height, +9, .5, 4, 255, 150, 75, 0, ry=90)
+    group.add_ellipsoid(cx, 3 , 8, 3, 2, 4, 150, 75, 0, ry=90)
+    group.add_sphere(cx, 6, 4, 2, 150, 75, 0, 90, ry=90)
+
+    group.add_sphere(cx+2, 8, 4, 1, 150, 75, 0, 90, ry=90)
+    group.add_sphere(cx-2, 8, 4, 1, 150, 75, 0, 90, ry=90)
+    group.add_cylinder(cx-1.5, cx-1.5, cz+6.5, .5, 4, 255, 150, 75, ry=90)
+    group.add_cylinder(cx+1.5, cx-1.5, cz+6.5, .5, 4, 255, 150, 75, 0, ry=90)
+    group.add_cylinder(cx-1.5, cx-1.5, cz+9, .5, 4, 255, 150, 75, 0, ry=90)
+    group.add_cylinder(cx+1.5, cx-1.5, cz+9, .5, 4, 255, 150, 75, 0, ry=90)
 
 #def draw_sedan(scene, cx, cz, r, g, b, ry):
     #group = scene.add_group(cx, 0, cz, 0, ry, 0)
     #group.add_box(0, 1, 0, 1.7, 0.7, 4.5, r, g, b)
     #group.add_box(0, 1.75, .4, 1.4, 0.8, 3.5, r, g, b)
     #group.add_cylinder(0, 0.65, -1.5, 0.5, 1.8,  127, 127, 127,1, 0, 0, 0, 90)
-    $group.add_cylinder(0, 0.65, 1.5, 0.5, 1.8,  127, 127, 127,1, 0, 0, 0, 90)
+    #group.add_cylinder(0, 0.65, 1.5, 0.5, 1.8,  127, 127, 127,1, 0, 0, 0, 90)
 
 def setup_lights(scene):
     scene.add_point_light(-100, 200, 0, 200, 200, 200, 1.0)
