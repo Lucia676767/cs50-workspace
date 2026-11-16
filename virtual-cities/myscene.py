@@ -25,7 +25,7 @@ def main():
         angle = (2 * math.pi / num_items) * i
         x = center_x + radius * math.cos(angle)
         z = center_z + radius * math.sin(angle)
-        DrawGrass(scene, x+10, z+10, -10)
+        DrawGrass(scene, x+10, z+10, 0)
 
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
