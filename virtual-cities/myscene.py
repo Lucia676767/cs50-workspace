@@ -19,7 +19,7 @@ def main():
     DrawBear(scene, 7, 7, 180)
     DrawLake(scene, 0, 0, 0, metalness=1.0, roughness=0.1)
     num_items = 25
-    radius = 100
+    radius = 75
     center_x, center_z = 2, 2
     for i in range(num_items):
         angle = (2 * math.pi / num_items) * i
