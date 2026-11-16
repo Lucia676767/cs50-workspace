@@ -53,18 +53,18 @@ def DrawMushy(scene, cx, cz, height):
     scene.add_sphere(cx, height-2, cz-2.5, 1, 255, 0, 0)
 
 def DrawBear(scene, cx, cz, ry):
-    group = scene.add_group(cx, 0, cz, 0, ry, 0)
+    group = scene.add_group(cx, 0, cz, 0, ry, ry=90)
     #body
-    group.add_ellipsoid(cx, 3 , 8, 3, 2, 4, 150, 75, 0)
+    group.add_ellipsoid(cx, 3 , 8, 3, 2, 4, 150, 75, ry=90)
     group.add_sphere(cx, 6, 4, 2, 150, 75, 0)
     #ears
     group.add_sphere(cx+2, 8, 4, 1, 150, 75, 0)
     group.add_sphere(cx-2, 8, 4, 1, 150, 75, 0)
     #front legs
-    group.add_cylinder(cx, 2, cz+1, .5, 4, 255, 150, 75)
-    group.add_cylinder(cx, 2, cz-1, .5, 4, 255, 150, 75)
+    group.add_cylinder(cx, 2, cz+1, .5, 4, 255, 150, 75, ry=90)
+    group.add_cylinder(cx, 2, cz-1, .5, 4, 255, 150, 75, ry=90)
     #back legs
-    group.add_cylinder(cx-1, 2, cz+3, .5, 4, 255, 150, 75)
+    group.add_cylinder(cx-1, 2, cz+3, .5, 4, 255, 150, 75, ry=90)
     group.add_cylinder(cx+1, 2, cz+3, .5, 4, 255, 150, 75)
 
 #def DrawGrass(scene, cx, cz, cy):
