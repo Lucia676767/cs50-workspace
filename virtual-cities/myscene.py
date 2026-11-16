@@ -54,8 +54,8 @@ def DrawLake(scene, cx, cz, cy):
         #scene.scene.add_cylinder(i + 25, cz-7, cy+ random.randint(25, 50), 2, 1, 136, 231, 136)
 
 def DrawLilyPad(scene, cx, cz, cy):
-    for i in range(25):
-        scene.add_cylinder(i , cz-7, cy+ random.randint(25, 50), 2, 1, 136, 231, 136)
+    for i in range(50):
+        scene.add_cylinder(i + 10 , cz-7, cy+ random.randint(25, 50), 2, 1, 136, 231, 136)
         scene.add_cylinder(i, cz-7, cy+ random.randint(25, 50), .75, 1, 255, 182, 193)
 
 
