@@ -18,7 +18,8 @@ def main():
     DrawBear(scene, 6, 6, 0)
     DrawBear(scene, 7, 7, 180)
     DrawLake(scene, 10, 7, 0)
-    DrawLilyPad(scene, 25, 25, 0)
+    DrawLilyPad(scene, 500, 14, 7)
+    DrawLilyPad(scene, 250, 7, 7)
     num_items = 50
     radius = 50
     center_x, center_z = 2, 2
@@ -46,13 +47,16 @@ def ForestCorner(scene, cx, cz, cy):
 
 def DrawLake(scene, cx, cz, cy):
     scene.add_cylinder(cx, cy, cz, 50, .5, 135, 206, 235, metalness=.5)
+    #for i in range(25):
+        #scene.add_cylinder(i , cz-7, cy+ random.randint(25, 50), 2, 1, 136, 231, 136)
+        #scene.add_cylinder(i, cz-7, cy+ random.randint(25, 50), .75, 1, 255, 182, 193)
         #scene.add_cylinder(i + 25, cz-7, cy+ random.randint(25, 50), 2, 1, 136, 231, 136)
         #scene.scene.add_cylinder(i + 25, cz-7, cy+ random.randint(25, 50), 2, 1, 136, 231, 136)
 
 def DrawLilyPad(scene, cx, cz, cy):
     for i in range(25):
-        scene.add_cylinder(i + 25, cz-7, cy+ random.randint(25, 50), 2, 1, 136, 231, 136)
-        scene.add_cylinder(i + 25, cz-7, cy+ random.randint(25, 50), .75, 1, 255, 182, 193)
+        scene.add_cylinder(i , cz-7, cy+ random.randint(25, 50), 2, 1, 136, 231, 136)
+        scene.add_cylinder(i, cz-7, cy+ random.randint(25, 50), .75, 1, 255, 182, 193)
 
 
 def DrawTreeDif(scene, cx, cz, height):
