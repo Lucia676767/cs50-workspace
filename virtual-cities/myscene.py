@@ -17,8 +17,8 @@ def main():
     DrawBear(scene, 4, 4, 90)
     DrawBear(scene, 6, 6, 0)
     DrawBear(scene, 7, 7, 180)
-    DrawLake(scene, 0, 0, 0, metalness=1.0, roughness=0)
-    #DrawGrass(scene, 5, 5, 5)
+    DrawLake(scene, 0, 0, 0, metalness=1.0, roughness=0.1)
+    DrawGrass(scene, 5, 5, 5)
 
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
@@ -53,25 +53,26 @@ def DrawMushy(scene, cx, cz, height):
     scene.add_sphere(cx, height-2, cz-2.5, 1, 255, 0, 0)
 
 def DrawBear(scene, cx, cz, ry):
-    group = scene.add_group(cx, 0, cz, 0, ry, ry=90)
+    group = scene.add_group(cx, 0, cz, 0, ry, 0)
     #body
-    group.add_ellipsoid(cx, 3 , 8, 3, 2, 4, 150, 75, ry=90)
+    group.add_ellipsoid(cx, 3 , 8, 3, 2, 4, 150, 75, 0)
     group.add_sphere(cx, 6, 4, 2, 150, 75, 0)
     #ears
     group.add_sphere(cx+2, 8, 4, 1, 150, 75, 0)
     group.add_sphere(cx-2, 8, 4, 1, 150, 75, 0)
     #front legs
-    group.add_cylinder(cx, 2, cz+1, .5, 4, 255, 150, 75, ry=90)
-    group.add_cylinder(cx, 2, cz-1, .5, 4, 255, 150, 75, ry=90)
+    group.add_cylinder(cx, 2, cz+1, .5, 4, 255, 150, 75)
+    group.add_cylinder(cx, 2, cz-1, .5, 4, 255, 150, 75)
     #back legs
-    group.add_cylinder(cx-1, 2, cz+3, .5, 4, 255, 150, 75, ry=90)
+    group.add_cylinder(cx-1, 2, cz+3, .5, 4, 255, 150, 75)
     group.add_cylinder(cx+1, 2, cz+3, .5, 4, 255, 150, 75)
 
-#def DrawGrass(scene, cx, cz, cy):
+def DrawGrass(scene, cx, cz, cy):
     #for i in range(30):
     #scene.add_cone(cx, cz, cy, random.randint(1, 3), random.randint(1,7), 6, 64, 43)
     #scene.add_cone(cx, cz, cy, random.randint(1, 3), random.randint(1,7), 52, 28, 2)
     #draw_city_block(scene, 3 + i, i * 20)
+    
 def setup_lights(scene):
     scene.add_point_light(-100, 200, 0, 200, 200, 200, 1.0)
     scene.add_point_light(100, 200, 0, 200, 200, 200, 1.0)
