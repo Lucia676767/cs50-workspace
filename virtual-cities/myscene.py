@@ -44,7 +44,7 @@ def ForestCorner(scene, cx, cz, cy):
         DrawTreeDif(scene, x+15, z+15,random.randint(10,20))
 
 def DrawLake(scene, cx, cz, cy):
-    scene.add_cylinder(cx, cy, cz, 50, .5, 79, 115, 142)
+    scene.add_cylinder(cx, cy, cz, 50, .5, 137, 207, 240s)
     scene.add_cylinder(cx, cy, cz, 2, 1, 136, 231, 136)
 
 def DrawTreeDif(scene, cx, cz, height):
