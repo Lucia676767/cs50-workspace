@@ -18,7 +18,7 @@ def main():
     DrawBear(scene, 6, 6, 0)
     DrawBear(scene, 7, 7, 180)
     DrawLake(scene, 0, 0, 0, metalness=1.0, roughness=0.1)
-    DrawGrass(scene, 5, 5, 5)
+    DrawGrass(scene, 10, 1)
 
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
@@ -67,10 +67,10 @@ def DrawBear(scene, cx, cz, ry):
     group.add_cylinder(cx-1, 2, cz+3, .5, 4, 255, 150, 75)
     group.add_cylinder(cx+1, 2, cz+3, .5, 4, 255, 150, 75)
 
-def DrawGrass(scene, cx, cz, cy):
+def DrawGrass(scene, cx, cz):
     #for i in range(30):
-    scene.add_cone(cx, cz-4, cy-2, 1, random.randint(1,5), 6, 64, 43)
-    scene.add_cone(cx, cz-4, cy, 1, random.randint(2,6, 52, 28, 2)
+    scene.add_cone(cx, cz-4, -2, 1, random.randint(1,5), 6, 64, 43)
+    scene.add_cone(cx, cz-4, 1, 1, random.randint(2,6), 52, 28, 2)
     #draw_city_block(scene, 3 + i, i * 20)
 
 def setup_lights(scene):
