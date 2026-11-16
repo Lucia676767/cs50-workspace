@@ -25,7 +25,7 @@ def main():
         angle = (2 * math.pi / num_items) * i
         x = center_x + radius * math.cos(angle)
         z = center_z + radius * math.sin(angle)
-        DrawGrass(scene, i+100, 6)
+        DrawGrass(scene, x, z, 1)
 
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
@@ -73,7 +73,7 @@ def DrawBear(scene, cx, cz, ry):
     group.add_cylinder(cx-1, 2, cz+3, .5, 4, 255, 150, 75)
     group.add_cylinder(cx+1, 2, cz+3, .5, 4, 255, 150, 75)
 
-def DrawGrass(scene, cx, cz):
+def DrawGrass(scene, cx, cz, cy):
     #for i in range(30):
     scene.add_cone(cx-2, cz-3, 2, 1, 6, 6, 64, 43)
     scene.add_cone(cx, cz-5, 2, 1, 2, 52, 28, 2)
