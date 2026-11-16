@@ -69,10 +69,10 @@ def DrawBear(scene, cx, cz, ry):
 
 def DrawGrass(scene, cx, cz, cy):
     #for i in range(30):
-    #scene.add_cone(cx, cz, cy, random.randint(1, 3), random.randint(1,7), 6, 64, 43)
-    #scene.add_cone(cx, cz, cy, random.randint(1, 3), random.randint(1,7), 52, 28, 2)
+    scene.add_cone(cx, cz, cy, random.randint(1, 3), random.randint(1,7), 6, 64, 43)
+    scene.add_cone(cx, cz, cy, random.randint(1, 3), random.randint(1,7), 52, 28, 2)
     #draw_city_block(scene, 3 + i, i * 20)
-    
+
 def setup_lights(scene):
     scene.add_point_light(-100, 200, 0, 200, 200, 200, 1.0)
     scene.add_point_light(100, 200, 0, 200, 200, 200, 1.0)
