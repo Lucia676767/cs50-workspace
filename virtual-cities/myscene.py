@@ -6,7 +6,7 @@ https://gist.github.com/mrsharp-milken/21c48a631c51849a83bf6f05ea9c8b86
 """
 import random
 from Scene3D import Scene3D
-
+import math
 
 def main():
     scene = Scene3D()
@@ -18,13 +18,18 @@ def main():
     DrawBear(scene, 6, 6, 0)
     DrawBear(scene, 7, 7, 180)
     DrawLake(scene, 0, 0, 0, metalness=1.0, roughness=0.1)
-    for i in range(100):
+    num_items = 25
+    radius = 100
+    center_x, center_z = 2, 2
+    for i in range(num_items):
+        angle = (2 * math.pi / num_items) * i
+        x = center_x + radius * math.cos(angle)
+        z = center_z + radius * math.sin(angle)
         DrawGrass(scene, i+100, 6)
 
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
 def ForestCorner(scene, cx, cz, cy):
-    import math
     num_items = 25
     radius = 100
     center_x, center_z = 4, 4
