@@ -18,7 +18,7 @@ def main():
     DrawBear(scene, 6, 6, 0)
     DrawBear(scene, 7, 7, 180)
     DrawLake(scene, 0, 0, 0, metalness=1.0, roughness=0.1)
-    DrawGrass(scene, 10, 1)
+    DrawGrass(scene, 6, 6)
 
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
