@@ -17,7 +17,7 @@ def main():
     DrawBear(scene, 4, 4, 90)
     DrawBear(scene, 6, 6, 0)
     DrawBear(scene, 7, 7, 180)
-    DrawLake(scene, 10, 7, 0, metalness=1.0, roughness=0.1)
+    DrawLake(scene, 10, 7, 0)
     num_items = 50
     radius = 50
     center_x, center_z = 2, 2
@@ -43,8 +43,9 @@ def ForestCorner(scene, cx, cz, cy):
         DrawMushy(scene, x+10, z+10, 4)
         DrawTreeDif(scene, x+15, z+15,random.randint(10,20))
 
-def DrawLake(scene, cx, cz, cy, metalness, roughness):
-    scene.add_cylinder(cx, cy, cz, 50, .5, 79, 115, 142, metalness, roughness)
+def DrawLake(scene, cx, cz, cy):
+    scene.add_cylinder(cx, cy, cz, 50, .5, 79, 115, 142)
+    scene.add_cylinder(cx, cy, cz, 2, 1, 136, 231, 136)
 
 def DrawTreeDif(scene, cx, cz, height):
     scene.add_cylinder(cx , height/2, cz, 1, height, 139, 69, 19)
