@@ -18,7 +18,7 @@ def main():
     DrawBear(scene, 6, 6, 0)
     DrawBear(scene, 7, 7, 180)
     DrawLake(scene, 10, 7, 0)
-    DrawLilyPad(scene, 500, 14, 7)
+    DrawLilyPad(scene, 700, 7, 7)
     DrawLilyPad(scene, 250, 7, 7)
     num_items = 50
     radius = 50
