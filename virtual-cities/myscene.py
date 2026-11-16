@@ -18,8 +18,8 @@ def main():
     DrawBear(scene, 6, 6, 0)
     DrawBear(scene, 7, 7, 180)
     DrawLake(scene, 0, 0, 0, metalness=1.0, roughness=0.1)
-    num_items = 25
-    radius = 75
+    num_items = 50
+    radius = 50
     center_x, center_z = 2, 2
     for i in range(num_items):
         angle = (2 * math.pi / num_items) * i
@@ -75,8 +75,8 @@ def DrawBear(scene, cx, cz, ry):
 
 def DrawGrass(scene, cx, cz, cy):
     #for i in range(30):
-    scene.add_cone(cx-2, cz-3, 2, 1, 6, 6, 64, 43)
-    scene.add_cone(cx, cz-5, 2, 1, 2, 52, 28, 2)
+    scene.add_cone(cx-2, 2, cz-3, 1, 6, 6, 64, 43)
+    scene.add_cone(cx, 2, cz-5, 1, 2, 52, 28, 2)
     #draw_city_block(scene, 3 + i, i * 20)
 
 def setup_lights(scene):
