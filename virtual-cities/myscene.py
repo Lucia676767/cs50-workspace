@@ -45,8 +45,15 @@ def ForestCorner(scene, cx, cz, cy):
 
 def DrawLake(scene, cx, cz, cy):
     scene.add_cylinder(cx, cy, cz, 50, .5, 135, 206, 235)
-    for i in range
-    scene.add_cylinder(cx + 7, cy, cz + 7, 2, 1, 136, 231, 136)
+    for i in range(20):
+        scene.add_cylinder(i + 25, cz-7, cy+ random.randint(25, 50), 2, 1, 136, 231, 136)
+        #scene.scene.add_cylinder(i + 25, cz-7, cy+ random.randint(25, 50), 2, 1, 136, 231, 136)
+
+def DrawLilyPad(scene, cx, cz, cy)
+    #for i in range(20):
+        scene.add_cylinder(i + 25, cz-7, cy+ random.randint(25, 50), 2, 1, 136, 231, 136)
+        scene.scene.add_cylinder(i + 25, cz-7, cy+ random.randint(25, 50), 2, 1, 136, 231, 136)
+
 
 def DrawTreeDif(scene, cx, cz, height):
     scene.add_cylinder(cx , height/2, cz, 1, height, 139, 69, 19)
