@@ -76,11 +76,11 @@ def DrawMushy(scene, cx, cz, height):
 def DrawBear(scene, cx, cz, ry):
     group = scene.add_group(cx, 0, cz, 0, ry, 0)
     #body
-    group.add_ellipsoid(cx, 1 , 8, 3, 2, 4, 150, 75, 0)
-    group.add_sphere(cx, 3, 4, 2, 150, 75, 0)
+    group.add_ellipsoid(cx, cz+1 , 8, 3, 2, 4, 150, 75, 0)
+    group.add_sphere(cx, 3, cz+4, 2, 150, 75, 0)
     #ears
-    group.add_sphere(cx+1, 4.5, 4, 1, 150, 75, 0)
-    group.add_sphere(cx-1, 4.5, 4, 1, 150, 75, 0)
+    group.add_sphere(cx+1, 4.5, cz+4, 1, 150, 75, 0)
+    group.add_sphere(cx-1, 4.5, cz+4, 1, 150, 75, 0)
     #front legs
     #group.add_cylinder(cx, 2, cz+1, .5, 4, 255, 150, 75)
     #group.add_cylinder(cx, 2, cz-1, .5, 4, 255, 150, 75)
