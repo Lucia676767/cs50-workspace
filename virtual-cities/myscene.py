@@ -57,8 +57,8 @@ def DrawLake(scene, cx, cz, cy):
 
 def DrawLilyPad(scene, cx, cz, cy):
     for i in range(50):
-        scene.add_cylinder(cx+i , cy, cz+ random.randint(25, 50), 2, 1, 136, 231, 136)
-        scene.add_cylinder(cx+i, cy, cz+ random.randint(25, 50), .75, 1, 255, 182, 193)
+        scene.add_cylinder(cx , cy+.5, cz+ random.randint(25, 50), 2, 1, 136, 231, 136)
+        scene.add_cylinder(cx, cy+.5, cz+ random.randint(25, 50), .75, 1, 255, 182, 193)
 
 
 def DrawTreeDif(scene, cx, cz, height):
