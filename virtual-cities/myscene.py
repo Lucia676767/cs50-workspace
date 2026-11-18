@@ -20,6 +20,7 @@ def main():
     DrawLake(scene, 10, 7, 0)
     DrawLilyPad(scene, 700, 7, 7)
     DrawLilyPad(scene, 250, 7, 7)
+    #To Do make this DrawField
     num_items = 50
     radius = 50
     center_x, center_z = 2, 2
@@ -31,6 +32,7 @@ def main():
 
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
+#change functions to take x,y,z order not x,z,y
 def ForestCorner(scene, cx, cz, cy):
     num_items = 25
     radius = 100
