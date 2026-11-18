@@ -14,7 +14,7 @@ def main():
     setup_cameras(scene)
     add_ground(scene)
     ForestCorner(scene, 6, 6, 6)
-    DrawBear(scene, 50, 10, 180)
+    DrawBear(scene, 12, 12, 180)
     DrawBear(scene, 6, 6, 0)
     DrawBear(scene, 7, 7, 180)
     DrawLake(scene, 10, 7, 0)
@@ -76,7 +76,7 @@ def DrawMushy(scene, cx, cz, height):
 def DrawBear(scene, cx, cz, ry):
     group = scene.add_group(cx, 0, cz, 0, ry, 0)
     #body
-    group.add_ellipsoid(cx, cz+1 , 8, 3, 2, 4, 150, 75, 0)
+    group.add_ellipsoid(cx, 1, cz+8, 3, 2, 4, 150, 75, 0)
     group.add_sphere(cx, 3, cz+4, 2, 150, 75, 0)
     #ears
     group.add_sphere(cx+1, 4.5, cz+4, 1, 150, 75, 0)
