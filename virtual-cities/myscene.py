@@ -20,8 +20,6 @@ def main():
     DrawLake(scene, 10, 7, 0)
     DrawLilyPad(scene, 10, 7, 1, 50)
     DrawField(scene, 50, 50, 2, 2)
-    #To Do make this DrawField
-
 
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
@@ -49,17 +47,11 @@ def ForestCorner(scene, cx, cz, cy):
 
 def DrawLake(scene, cx, cz, cy):
     scene.add_cylinder(cx, cy, cz, 50, .5, 135, 206, 235, metalness=.5)
-    #for i in range(25):
-        #scene.add_cylinder(i , cz-7, cy+ random.randint(25, 50), 2, 1, 136, 231, 136)
-        #scene.add_cylinder(i, cz-7, cy+ random.randint(25, 50), .75, 1, 255, 182, 193)
-        #scene.add_cylinder(i + 25, cz-7, cy+ random.randint(25, 50), 2, 1, 136, 231, 136)
-        #scene.scene.add_cylinder(i + 25, cz-7, cy+ random.randint(25, 50), 2, 1, 136, 231, 136)
 
 def DrawLilyPad(scene, cx, cz, cy, numLilies):
     for i in range(numLilies):
         scene.add_cylinder(cx + random.randint(-35, 35), cy+.5, cz+ random.randint(-35, 35), 2, 1, 136, 231, 136)
         scene.add_cylinder(cx+ random.randint(-35, 35), cy+.5, cz+ random.randint(-35, 35), .75, 1, 255, 182, 193)
-
 
 def DrawTreeDif(scene, cx, cz, height):
     scene.add_cylinder(cx , height/2, cz, 1, height, 139, 69, 19)
@@ -81,18 +73,10 @@ def DrawBear(scene, cx, cz, ry):
     #ears
     group.add_sphere(cx+1, 4.5, cz+4, 1, 150, 75, 0)
     group.add_sphere(cx-1, 4.5, cz+4, 1, 150, 75, 0)
-    #front legs
-    #group.add_cylinder(cx, 2, cz+1, .5, 4, 255, 150, 75)
-    #group.add_cylinder(cx, 2, cz-1, .5, 4, 255, 150, 75)
-    #back legs
-    #group.add_cylinder(cx-1, 2, cz+3, .5, 4, 255, 150, 75)
-    #sgroup.add_cylinder(cx+1, 2, cz+3, .5, 4, 255, 150, 75)
 
 def DrawGrass(scene, cx, cz, cy):
-    #for i in range(30):
     scene.add_cone(cx-2, 2, cz-3, 1, 6, 6, 64, 43)
     scene.add_cone(cx, 2, cz-5, 1, 2, 52, 28, 2)
-    #draw_city_block(scene, 3 + i, i * 20)
 
 def setup_lights(scene):
     scene.add_point_light(-100, 200, 0, 200, 200, 200, 1.0)
