@@ -18,19 +18,19 @@ def main():
     DrawBear(scene, 6, 6, 0)
     DrawBear(scene, 7, 7, 180)
     DrawLake(scene, 10, 7, 0)
-    DrawLilyPad(scene, 700, 7, 1)
-    DrawLilyPad(scene, 10, 7, 1)
+    DrawLilyPad(scene, 10, 7, 1, 50)
+    DrawField(scene, 50, 50, 2, 2)
     #To Do make this DrawField
-    num_items = 50
-    radius = 50
-    center_x, center_z = 2, 2
+
+
+    scene.save_scene("myscene.html", "Secret Garden Forest")
+
+def DrawField(scene, num_items, radius, center_x, center_z):
     for i in range(num_items):
         angle = (2 * math.pi / num_items) * i
         x = center_x + radius * math.cos(angle)
         z = center_z + radius * math.sin(angle)
         DrawGrass(scene, x+10, z+10, 0)
-
-    scene.save_scene("myscene.html", "Secret Garden Forest")
 
 #change functions to take x,y,z order not x,z,y
 def ForestCorner(scene, cx, cz, cy):
@@ -55,8 +55,8 @@ def DrawLake(scene, cx, cz, cy):
         #scene.add_cylinder(i + 25, cz-7, cy+ random.randint(25, 50), 2, 1, 136, 231, 136)
         #scene.scene.add_cylinder(i + 25, cz-7, cy+ random.randint(25, 50), 2, 1, 136, 231, 136)
 
-def DrawLilyPad(scene, cx, cz, cy):
-    for i in range(50):
+def DrawLilyPad(scene, cx, cz, cy, numLilies):
+    for i in range(numLilies):
         scene.add_cylinder(cx + random.randint(-35, 35), cy+.5, cz+ random.randint(-35, 35), 2, 1, 136, 231, 136)
         scene.add_cylinder(cx+ random.randint(-35, 35), cy+.5, cz+ random.randint(-35, 35), .75, 1, 255, 182, 193)
 
