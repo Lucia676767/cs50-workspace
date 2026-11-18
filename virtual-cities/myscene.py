@@ -19,7 +19,7 @@ def main():
     DrawBear(scene, 7, 7, 180)
     DrawLake(scene, 10, 7, 0)
     DrawLilyPad(scene, 700, 7, 7)
-    DrawLilyPad(scene, 250, 7, 7)
+    DrawLilyPad(scene, 10, 7, 7)
     #To Do make this DrawField
     num_items = 50
     radius = 50
@@ -57,8 +57,8 @@ def DrawLake(scene, cx, cz, cy):
 
 def DrawLilyPad(scene, cx, cz, cy):
     for i in range(50):
-        scene.add_cylinder(i+3 , cz-5, cy+ random.randint(25, 50), 2, 1, 136, 231, 136)
-        scene.add_cylinder(i+3, cz-5, cy+ random.randint(25, 50), .75, 1, 255, 182, 193)
+        scene.add_cylinder(cx+i , cy, cz+ random.randint(25, 50), 2, 1, 136, 231, 136)
+        scene.add_cylinder(cx+i, cy, cz+ random.randint(25, 50), .75, 1, 255, 182, 193)
 
 
 def DrawTreeDif(scene, cx, cz, height):
