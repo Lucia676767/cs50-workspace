@@ -23,6 +23,10 @@ def main():
 
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
+def DrawFloorFlower(scene, cx, cz)
+
+
+
 def DrawField(scene, num_items, radius, center_x, center_z):
     for i in range(num_items):
         angle = (2 * math.pi / num_items) * i
