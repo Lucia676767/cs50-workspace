@@ -14,7 +14,7 @@ def main():
     setup_cameras(scene)
     add_ground(scene)
     ForestCorner(scene, 6, 6, 6)
-    DrawBear(scene, 12, 12, 180)
+    DrawBear(scene, 10, 10, 90)
     DrawBear(scene, 6, 6, 0)
     DrawBear(scene, 7, 7, 180)
     DrawLake(scene, 10, 7, 0)
