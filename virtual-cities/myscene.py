@@ -20,13 +20,15 @@ def main():
     DrawLake(scene, 10, 7, 0)
     DrawLilyPad(scene, 10, 7, .5, 50)
     DrawField(scene, 50, 50, 2, 2)
-    DrawFloorFlower(scene, 20, 20)
-
+    #DrawFloorFlower(scene, 20, 20)
+    DrawMulch(scene, 70, 10)
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
-def DrawFloorFlower(scene, cx, cz):
-    scene.add_cylinder(cx, 1, cz, 1, 1, 255, 182, 193)
-
+#def DrawFloorFlower(scene, cx, cz):
+    #scene.add_cylinder(cx, 1, cz, 1, 1, 255, 182, 193)
+def DrawMulch(scene, cx, cz):
+    for i in range(10)
+        scene.add_box(cx, 1, cz, 1, 1, 4, 101, 67, 33)
 
 def DrawField(scene, num_items, radius, center_x, center_z):
     for i in range(num_items):
