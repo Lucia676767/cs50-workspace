@@ -18,13 +18,14 @@ def main():
     DrawBear(scene, 6, 6, 0)
     DrawBear(scene, 7, 7, 180)
     DrawLake(scene, 10, 7, 0)
-    DrawLilyPad(scene, 10, 7, 1, 50)
+    DrawLilyPad(scene, 10, 7, .5, 50)
     DrawField(scene, 50, 50, 2, 2)
+    DrawFloorFlower(scene, 20, 10)
 
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
-def DrawFloorFlower(scene, cx, cz)
-
+def DrawFloorFlower(scene, cx, cz):
+    scene.add_cylinder(cx, 1, cz, 1, 1, 255, 182, 193)
 
 
 def DrawField(scene, num_items, radius, center_x, center_z):
