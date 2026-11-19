@@ -82,7 +82,7 @@ def ForestCorner(scene, cx, cz, cy):
         DrawTreeDif(scene, x+15, z+15,random.randint(10,20))
 
 def DrawLake(scene, cx, cz, cy):
-    scene.add_cylinder(cx, cy, cz, 50, .5, 135, 206, 235, metalness=.5)
+    scene.add_cylinder(cx, cy, cz, 50, .5, 135, 206, 235, metalness=.9)
 
 def DrawLilyPad(scene, cx, cz, cy, numLilies):
     for i in range(numLilies):
