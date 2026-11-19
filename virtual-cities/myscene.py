@@ -21,7 +21,7 @@ def main():
     DrawLilyPad(scene, 10, 7, .5, 50)
     DrawField(scene, 50, 50, 2, 2)
     for i in range(4):
-        DrawForestFloor(scene, 10 + i*100, 70 + i*100)
+        DrawForestFloor(scene, 70 + i*100, 10 + i*100)
     #for i in range (7):
         #DrawFloorFlower(scene, 70 + i*random.randint(4,7), 15 + i*random.randint(5,10))
     #DrawMulch(scene, 70, 10)
@@ -30,8 +30,8 @@ def main():
 
 def DrawForestFloor(scene, cx, cz):
     for i in range (10):
-        DrawFloorFlower(scene, 70 + i*random.randint(4,7), 15 + i*random.randint(5,10))
         DrawFloorFlower(scene, 15 + i*random.randint(4,7), 70 + i*random.randint(5,10))
+        DrawFloorFlower(scene, 70 + i*random.randint(4,7), 15 + i*random.randint(5,10))
        #DrawFloorFlower(scene, 10 + i*random.randint(4,7), 70 + i*random.randint(5,10))
         #DrawFloorFlower(scene, 70 + i*random.randint(4,7), 15 + i*random.randint(5,10))
     DrawMulch(scene, 70, 10)
