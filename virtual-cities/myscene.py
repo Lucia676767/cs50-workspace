@@ -22,9 +22,8 @@ def main():
     DrawField(scene, 50, 50, 2, 2)
     #DrawForestFloor(scene, 50, 50)
     DrawForestFloor(scene, 40, 60, 4,4)
-
-    #DrawForestFloor(scene, 45, 5)
-    #DrawForestFloor(scene, 5, 45)
+    DrawForestFloor(scene, 40, 80, 4,4)
+    DrawForestFloor(scene, 60, 60, 4,4)
     DrawMulch(scene, 70, 10)
     DrawMulch(scene, 10, 70)
     scene.save_scene("myscene.html", "Secret Garden Forest")
@@ -34,8 +33,9 @@ def main():
 def DrawForestFloor(scene, num_items, radius, center_x, center_z):
     for i in range(num_items):
         angle = (2 * math.pi / num_items) * i
-        x = center_x + radius * math.cos(angle)
-        z = center_z + radius * math.sin(angle)
+        distance = radius + random.randint(10,25)
+        x = center_x + distance * math.cos(angle)
+        z = center_z + distance * math.sin(angle)
         DrawFloorFlower(scene, x, z)
         DrawFloorFlower(scene, x, z)
 
