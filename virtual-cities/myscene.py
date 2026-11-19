@@ -28,6 +28,11 @@ def main():
 def DrawFloorFlower(scene, cx, cz):
     scene.add_cylinder(cx, 1, cz, .5, 5, 0, 128, 0)
     scene.add_sphere(cx, 3, cz, 1, 255, 182, 193)
+    #surrounding petals
+    scene.add_sphere(cx, 4, cz, 1, 255, 182, 193)
+    scene.add_sphere(cx+.5, 3, cz, 1, 255, 182, 193)
+    scene.add_sphere(cx-.5, 3, cz, 1, 255, 182, 193)
+    scene.add_sphere(cx, 3, cz-.5, 1, 255, 182, 193)
     #scene.add_cone(cx, 3, cz, 1, 3, 255, 0, 157, ry=90)
 
 def DrawMulch(scene, cx, cz):
