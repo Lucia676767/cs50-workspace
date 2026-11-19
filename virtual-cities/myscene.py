@@ -21,7 +21,7 @@ def main():
     DrawLilyPad(scene, 10, 7, .5, 50)
     DrawField(scene, 50, 50, 2, 2)
     DrawForestFloor(scene, 50, 50)
-    DrawForestFloor(scene, 50, 50)
+    DrawForestFloor(scene, 40, 40,2,2)
     DrawForestFloor(scene, 45, 5)
     DrawForestFloor(scene, 5, 45)
     DrawMulch(scene, 70, 10)
@@ -36,7 +36,7 @@ def DrawForestFloor(scene, num_items, radius, center_x, center_z):
         x = center_x + radius * math.cos(angle)
         z = center_z + radius * math.sin(angle)
         DrawFloorFlower(scene, x, z)
-        DrawFloorFlower(scene, x, z
+        DrawFloorFlower(scene, x, z)
 
 
 def DrawFloorFlower(scene, cx, cz):
