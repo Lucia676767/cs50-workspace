@@ -28,7 +28,7 @@ def main():
 def DrawFloorFlower(scene, cx, cz):
     scene.add_cylinder(cx, 1, cz, .5, 5, 0, 128, 0)
     #scene.add_sphere(cx, 3, cz, 1, r, g, b)
-    scene.add_cone(cx, 3, cz, 1, 3, 255, 0, 157, ry=180)
+    scene.add_cone(cx, 3, cz, 1, 3, 255, 0, 157, ry=18021)
 
 def DrawMulch(scene, cx, cz):
     for i in range(10):
