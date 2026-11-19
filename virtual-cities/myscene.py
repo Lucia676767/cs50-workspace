@@ -122,7 +122,7 @@ def setup_lights(scene):
 
 def setup_cameras(scene):
     scene.add_camera(0, 2, 0, 0)
-    scene.add_camera(0, 50, -20, 180)
+    scene.add_camera(-0.00,69.04,-196.38, 180)
     scene.add_camera(0, 2, -40, 180)
 
 def add_ground(scene):
