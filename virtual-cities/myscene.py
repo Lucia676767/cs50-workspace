@@ -20,7 +20,7 @@ def main():
     DrawLake(scene, 10, 7, 0)
     DrawLilyPad(scene, 10, 7, .5, 50)
     DrawField(scene, 50, 50, 2, 2)
-    DrawFloorFlower(scene, 20, 10)
+    DrawFloorFlower(scene, 20, 20)
 
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
