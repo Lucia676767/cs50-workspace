@@ -50,6 +50,15 @@ def DrawMulch(scene, cx, cz):
         scene.add_box(cx + i * random.randint(1,3), .25, cz + i * random.randint(1,3), 1, 1, 4, 101, 67, 33)
         scene.add_box(cx + i * random.randint(1,3), .25, cz + i * random.randint(1,3), 4, 1, 1, 101, 67, 33)
 
+def DrawMulch(scene, num_items, radius, center_x, center_z):
+    for i in range(num_items):
+        angle = (2 * math.pi / num_items) * i
+        x = center_x + radius * math.cos(angle)
+        z = center_z + radius * math.sin(angle)
+        DrawGrass(scene, x+10, z+10, 0)
+
+
+
 def DrawField(scene, num_items, radius, center_x, center_z):
     for i in range(num_items):
         angle = (2 * math.pi / num_items) * i
