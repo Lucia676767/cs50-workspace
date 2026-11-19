@@ -28,12 +28,16 @@ def main():
     DrawMulch(scene, 10, 70)
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
-def DrawForestFloor(scene, cx, cz):
-    for i in range (10):
-        DrawFloorFlower(scene, 70 + i*random.randint(2,5), 10 + i + random.randint(1,3))
-        DrawFloorFlower(scene, 70 + i*4, 10 + i*4)
-       #DrawFloorFlower(scene, 10 + i*random.randint(4,7), 70 + i*random.randint(5,10))
-        #DrawFloorFlower(scene, 70 + i*random.randint(4,7), 15 + i*random.randint(5,10))
+
+
+def DrawForestFloor(scene, num_items, radius, center_x, center_z):
+    for i in range(num_items):
+        angle = (2 * math.pi / num_items) * i
+        x = center_x + radius * math.cos(angle)
+        z = center_z + radius * math.sin(angle)
+        DrawFloorFlower(scene, x, z)
+        DrawFloorFlower(scene, x, z
+
 
 def DrawFloorFlower(scene, cx, cz):
     scene.add_cylinder(cx, 1, cz, .5, 5, 0, 128, 0)
@@ -50,12 +54,7 @@ def DrawMulch(scene, cx, cz):
         scene.add_box(cx + i * random.randint(1,3), .25, cz + i * random.randint(1,3), 1, 1, 4, 101, 67, 33)
         scene.add_box(cx + i * random.randint(1,3), .25, cz + i * random.randint(1,3), 4, 1, 1, 101, 67, 33)
 
-def DrawMulch(scene, num_items, radius, center_x, center_z):
-    for i in range(num_items):
-        angle = (2 * math.pi / num_items) * i
-        x = center_x + radius * math.cos(angle)
-        z = center_z + radius * math.sin(angle)
-        DrawGrass(scene, x+10, z+10, 0)
+
 
 
 
