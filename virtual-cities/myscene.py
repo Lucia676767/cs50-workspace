@@ -22,14 +22,15 @@ def main():
     DrawField(scene, 50, 50, 2, 2)
     #DrawFloorFlower(scene, 20, 20)
     DrawMulch(scene, 70, 10)
+    DrawMulch(scene, 10, 70)
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
 #def DrawFloorFlower(scene, cx, cz):
     #scene.add_cylinder(cx, 1, cz, 1, 1, 255, 182, 193)
 def DrawMulch(scene, cx, cz):
     for i in range(10):
-        scene.add_box(cx + i * random.randint(1,4), .5, cz + i * random.randint(1,4), 1, 1, 4, 101, 67, 33)
-        scene.add_box(cx + i * random.randint(1,4), .5, cz + i * random.randint(1,4), 4, 1, 1, 101, 67, 33)
+        scene.add_box(cx + i * random.randint(1,3), .5, cz + i * random.randint(1,3), 1, 1, 4, 101, 67, 33)
+        scene.add_box(cx + i * random.randint(1,3), .5, cz + i * random.randint(1,3), 4, 1, 1, 101, 67, 33)
 
 def DrawField(scene, num_items, radius, center_x, center_z):
     for i in range(num_items):
