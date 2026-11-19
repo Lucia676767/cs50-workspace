@@ -26,15 +26,15 @@ def main():
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
 def DrawFloorFlower(scene, cx, cz):
-   for i in range(4)
-    scene.add_cylinder(cx + i, 1, cz, .5, 5, 0, 128, 0)
-    scene.add_sphere(cx, 3, cz, 1, 255, 182, 193)
+   for i in range(4):
+    scene.add_cylinder(cx + i*2, 1, cz, .5, 5, 0, 128, 0)
+    scene.add_sphere(cx + i*2, 3, cz, 1, 255, 182, 193)
     #surrounding petals
-    scene.add_sphere(cx, 4, cz, 1, 255, 182, 193)
-    scene.add_sphere(cx+.5, 3, cz, 1, 255, 182, 193)
-    scene.add_sphere(cx-.5, 3, cz, 1, 255, 182, 193)
-    scene.add_sphere(cx, 3, cz-1, 1, 255, 182, 193)
-    scene.add_sphere(cx, 3, cz+1, 1, 255, 182, 193)
+    scene.add_sphere(cx + i*2, 4, cz, 1, 255, 182, 193)
+    scene.add_sphere(cx+.5 + i*4, 3, cz, 1, 255, 182, 193)
+    scene.add_sphere(cx-.5 + i*4, 3, cz, 1, 255, 182, 193)
+    scene.add_sphere(cx + i*4, 3, cz-1, 1, 255, 182, 193)
+    scene.add_sphere(cx+ i *4, 3, cz+1, 1, 255, 182, 193)
 
 def DrawMulch(scene, cx, cz):
     for i in range(10):
