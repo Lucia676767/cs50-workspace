@@ -20,8 +20,7 @@ def main():
     DrawLake(scene, 10, 7, 0)
     DrawLilyPad(scene, 10, 7, .5, 50)
     DrawField(scene, 50, 50, 2, 2)
-    for i in range(4):
-        DrawForestFloor(scene, 70 + i*100, 10 + i*100)
+    DrawForestFloor(scene, -70, 10)
     #for i in range (7):
         #DrawFloorFlower(scene, 70 + i*random.randint(4,7), 15 + i*random.randint(5,10))
     #DrawMulch(scene, 70, 10)
@@ -29,13 +28,13 @@ def main():
     scene.save_scene("myscene.html", "Secret Garden Forest")
 
 def DrawForestFloor(scene, cx, cz):
-    for i in range (10):
-        DrawFloorFlower(scene, 15 + i*random.randint(4,7), 70 + i*random.randint(5,10))
-        DrawFloorFlower(scene, 70 + i*random.randint(4,7), 15 + i*random.randint(5,10))
+    for i in range (50):
+        DrawFloorFlower(scene, -100 + i*random.randint(4,7), -100 + i*random.randint(5,10))
+        DrawFloorFlower(scene, -100 + i*random.randint(4,7), -100 + i*random.randint(5,10))
        #DrawFloorFlower(scene, 10 + i*random.randint(4,7), 70 + i*random.randint(5,10))
         #DrawFloorFlower(scene, 70 + i*random.randint(4,7), 15 + i*random.randint(5,10))
-    DrawMulch(scene, 70, 10)
-    DrawMulch(scene, 10, 70)
+    DrawMulch(scene, -70, 20)
+    DrawMulch(scene, -20, 70)
 
 def DrawFloorFlower(scene, cx, cz):
     scene.add_cylinder(cx, 1, cz, .5, 5, 0, 128, 0)
